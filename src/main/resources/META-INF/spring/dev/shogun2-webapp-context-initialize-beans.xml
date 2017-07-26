@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util
+                           http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--
+      The list of objects that shall be persisted.
+
+      The order of the objects is important here (as one object may require
+      that another object has been created before to avoid errors like 'object
+      references an unsaved transient instance save the transient instance
+      before flushing').
+    -->
+    <util:list id="objectsToCreate">
+
+        <!-- Roles -->
+        <ref bean="adminRole"/>
+        <ref bean="subAdminRole"/>
+        <ref bean="editorRole"/>
+        <ref bean="userRole"/>
+
+        <!-- Users -->
+        <ref bean="adminUser"/>
+        <ref bean="defaultUser"/>
+        <ref bean="exampleGroup1SubAdmin"/>
+        <ref bean="exampleGroup1Editor"/>
+        <ref bean="exampleGroup2SubAdmin"/>
+        <ref bean="exampleGroup2Editor"/>
+        <ref bean="inactiveAfterRegistrationUser"/>
+
+        <!-- UserGroups -->
+        <ref bean="adminUserGroup"/>
+        <ref bean="defaultUserGroup"/>
+        <ref bean="exampleGroup1"/>
+        <ref bean="exampleGroup2"/>
+
+        <!-- UserGroupRoles -->
+        <ref bean="adminUserUserGroupRole"/>
+        <ref bean="defaultUserUserGroupRole"/>
+        <ref bean="exampleGroup1SubAdminUserGroupRole"/>
+        <ref bean="exampleGroup1EditorUserGroupRole"/>
+        <ref bean="exampleGroup2SubAdminUserGroupRole"/>
+        <ref bean="exampleGroup2EditorUserGroupRole"/>
+        <ref bean="inactiveAfterRegistrationUserGroupRole"/>
+
+        <!-- Layouts -->
+        <ref bean="borderLayout"/>
+        <ref bean="absoluteLayout"/>
+        <ref bean="hboxLayout"/>
+        <ref bean="vboxLayout"/>
+
+        <!-- Layer sources/appearance -->
+        <ref bean="osmWmsLayerTileGridExtent" />
+        <ref bean="osmWmsLayerTileGrid" />
+
+        <ref bean="osmWmsLayerDataSource" />
+        <ref bean="osmWmsLayerGrayDataSource" />
+        <ref bean="osmWmsLayerAppearance" />
+        <ref bean="actionsLayerDataSource" />
+        <ref bean="actionsLayerAppearance" />
+        <ref bean="riversLayerDataSource" />
+        <ref bean="riversLayerAppearance" />
+        <ref bean="countriesLakesLayerDataSource" />
+        <ref bean="countriesLakesLayerAppearance" />
+        <ref bean="populatedPlacesLayerDataSource" />
+        <ref bean="populatedPlacesLayerAppearance" />
+        <ref bean="riversLakesCenterlinesLayerDataSource" />
+        <ref bean="riversLakesCenterlinesLayerAppearance" />
+
+        <!-- Permissions -->
+        <ref bean="readAccessPermissionCollection" />
+        <ref bean="createAccessPermissionCollection" />
+        <ref bean="updateAccessPermissionCollection" />
+        <ref bean="fullAccessPermissionCollection" />
+
+        <!-- Layers -->
+        <ref bean="osmWmsLayer" />
+        <ref bean="osmWmsLayerGray" />
+        <ref bean="actionsLayer" />
+        <ref bean="riversLayer" />
+        <ref bean="countriesLakesLayer" />
+        <ref bean="populatedPlacesLayer" />
+        <ref bean="riversLakesCenterlinesLayer" />
+
+        <!-- LayerTree for default application -->
+        <ref bean="defaultAppLayerTreeRootNode" />
+        <ref bean="layerTreeFolder1" />
+        <ref bean="layerTreeLeaf1.1" />
+        <ref bean="layerTreeLeaf1.2" />
+        <ref bean="layerTreeFolder2" />
+        <ref bean="layerTreeLeaf2.1" />
+
+        <!-- Controls -->
+        <ref bean="controlAttribution" />
+        <ref bean="controlZoom" />
+        <ref bean="controlRotate" />
+        <ref bean="controlZoomSlider" />
+        <ref bean="controlScaleLine" />
+
+        <!-- Map config -->
+        <ref bean="mapConfigExtent" />
+        <ref bean="mapConfig" />
+
+        <!-- Modules -->
+        <ref bean="zoomInModule" />
+        <ref bean="zoomOutModule" />
+        <ref bean="zoomToExtentModule" />
+        <ref bean="stepBackModule" />
+        <ref bean="stepForwardModule" />
+        <ref bean="hsiToolsModule" />
+        <ref bean="printModule" />
+        <ref bean="showMeasureToolsModule" />
+        <ref bean="showRedliningToolsModule" />
+        <ref bean="showWorkstateToolsModule" />
+        <ref bean="showAddWmsToolsModule" />
+
+        <ref bean="showMetaToolbarModule" />
+        <ref bean="metaToolbarModule" />
+
+        <ref bean="mapModule" />
+        <ref bean="toolsModule" />
+
+        <ref bean="multiSearchModule" />
+
+        <ref bean="mapContainer" />
+
+        <ref bean="headerLogoModule" />
+        <ref bean="loginButtonModule" />
+        <ref bean="translateToDeModule" />
+        <ref bean="translateToEnModule" />
+        <ref bean="userBatchModule" />
+        <ref bean="tbSpacerModule" />
+        <ref bean="headerModule" />
+
+        <ref bean="layerTreeModule" />
+        <ref bean="viewportModule" />
+
+        <!-- Applications -->
+        <ref bean="defaultApplication"/>
+
+        <!-- GeoServer Interceptor Rules -->
+        <ref bean="defaultWMSRequestInterceptorRule" />
+        <ref bean="defaultWMSResponseInterceptorRule" />
+        <ref bean="defaultWFSRequestInterceptorRule" />
+        <ref bean="defaultWFSResponseInterceptorRule" />
+        <ref bean="defaultWCSRequestInterceptorRule" />
+        <ref bean="defaultWCSResponseInterceptorRule" />
+
+    </util:list>
+
+    <!-- Define roles -->
+    <bean id="adminRole" class="de.terrestris.shogun2.model.Role">
+        <property name="name" value="${role.superAdminRoleName}"/>
+        <property name="description" value="Administrator Role"/>
+    </bean>
+    <bean id="subAdminRole" class="de.terrestris.shogun2.model.Role">
+        <property name="name" value="${role.subAdminRoleName}"/>
+        <property name="description" value="Subadmin Role"/>
+    </bean>
+    <bean id="editorRole" class="de.terrestris.shogun2.model.Role">
+        <property name="name" value="${role.editorRoleName}"/>
+        <property name="description" value="Editor Role"/>
+    </bean>
+    <bean id="userRole" class="de.terrestris.shogun2.model.Role">
+        <property name="name" value="${role.defaultUserRoleName}"/>
+        <property name="description" value="User Role"/>
+    </bean>
+
+    <!-- Define users -->
+    <bean id="adminUser" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="Admins first name"/>
+        <property name="lastName" value="Admins last name"/>
+        <property name="accountName" value="admin"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="true"/>
+    </bean>
+    <bean id="defaultUser" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="Users first name"/>
+        <property name="lastName" value="Users last name"/>
+        <property name="accountName" value="user"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="true"/>
+    </bean>
+    <bean id="exampleGroup1SubAdmin" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="Emmett"/>
+        <property name="lastName" value="Brown"/>
+        <property name="accountName" value="subadmin1"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="true"/>
+    </bean>
+    <bean id="exampleGroup1Editor" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="Martin"/>
+        <property name="lastName" value="McFly"/>
+        <property name="accountName" value="editor1"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="true"/>
+    </bean>
+    <bean id="exampleGroup2SubAdmin" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="George"/>
+        <property name="lastName" value="Wells"/>
+        <property name="accountName" value="subadmin2"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="true"/>
+    </bean>
+    <bean id="exampleGroup2Editor" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="David"/>
+        <property name="lastName" value="Filby"/>
+        <property name="accountName" value="editor2"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="true"/>
+    </bean>
+    <bean id="inactiveAfterRegistrationUser" class="de.terrestris.appshogun.model.ProjectUser">
+        <property name="firstName" value="Vinnie"/>
+        <property name="lastName" value="Jones"/>
+        <property name="accountName" value="inactiveUser"/>
+        <!-- This will be encrypted when the init service saves the user. -->
+        <property name="password" value="shogun2"/>
+        <property name="active" value="false"/>
+    </bean>
+
+    <!-- Define userGroups -->
+    <bean id="adminUserGroup" class="de.terrestris.appshogun.model.ProjectUserGroup">
+        <property name="name" value="Admin User Group"/>
+        <property name="owner" ref="adminUser"/>
+    </bean>
+    <bean id="defaultUserGroup" class="de.terrestris.appshogun.model.ProjectUserGroup">
+        <property name="name" value="Default User Group"/>
+        <property name="owner" ref="adminUser"/>
+    </bean>
+    <bean id="exampleGroup1" class="de.terrestris.appshogun.model.ProjectUserGroup">
+        <property name="name" value="Back to the Future"/>
+        <property name="owner" ref="exampleGroup1SubAdmin"/>
+    </bean>
+    <bean id="exampleGroup2" class="de.terrestris.appshogun.model.ProjectUserGroup">
+        <property name="name" value="The Time Machine"/>
+        <property name="owner" ref="exampleGroup2SubAdmin"/>
+    </bean>
+
+    <!-- Define userGroupRoles -->
+    <bean id="adminUserUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="adminUser"/>
+        <property name="group" ref="adminUserGroup"/>
+        <property name="role" ref="adminRole"/>
+    </bean>
+    <bean id="defaultUserUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="defaultUser"/>
+        <property name="group" ref="defaultUserGroup"/>
+        <property name="role" ref="userRole"/>
+    </bean>
+    <bean id="exampleGroup1SubAdminUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="exampleGroup1SubAdmin"/>
+        <property name="group" ref="exampleGroup1"/>
+        <property name="role" ref="subAdminRole"/>
+    </bean>
+    <bean id="exampleGroup1EditorUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="exampleGroup1Editor"/>
+        <property name="group" ref="exampleGroup1"/>
+        <property name="role" ref="editorRole"/>
+    </bean>
+    <bean id="exampleGroup2SubAdminUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="exampleGroup2SubAdmin"/>
+        <property name="group" ref="exampleGroup2"/>
+        <property name="role" ref="subAdminRole"/>
+    </bean>
+    <bean id="exampleGroup2EditorUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="exampleGroup2Editor"/>
+        <property name="group" ref="exampleGroup2"/>
+        <property name="role" ref="editorRole"/>
+    </bean>
+    <bean id="inactiveAfterRegistrationUserGroupRole" class="de.terrestris.appshogun.model.security.UserGroupRole">
+        <property name="user" ref="inactiveAfterRegistrationUser"/>
+        <!-- Inactive users aren't members of any group -->
+        <property name="role" ref="userRole"/>
+    </bean>
+
+    <!-- The Border layout -->
+    <bean id="borderLayout" class="de.terrestris.shogun2.model.layout.BorderLayout">
+        <property name="propertyHints">
+            <util:set id="propertyHints">
+                <value>collapsible</value>
+                <value>split</value>
+            </util:set>
+        </property>
+        <property name="propertyMusts">
+            <util:set id="propertyMusts">
+                <value>region</value>
+            </util:set>
+        </property>
+        <property name="regions">
+            <util:list>
+                <value>center</value>
+                <value>north</value>
+                <value>west</value>
+            </util:list>
+        </property>
+    </bean>
+
+    <!-- The Absolute layout -->
+    <bean id="absoluteLayout" class="de.terrestris.shogun2.model.layout.AbsoluteLayout">
+        <property name="propertyMusts">
+            <util:set id="propertyMusts">
+                <value>x</value>
+                <value>y</value>
+            </util:set>
+        </property>
+        <!-- TODO coords property -->
+    </bean>
+
+    <!-- The HBOX layout -->
+    <bean id="hboxLayout" class="de.terrestris.shogun2.model.layout.Layout">
+        <property name="type" value="hbox" />
+        <property name="propertyHints">
+            <util:set id="propertyHints">
+                <value>flex</value>
+                <value>width</value>
+            </util:set>
+        </property>
+        <property name="propertyMusts">
+            <util:set id="propertyMusts">
+            </util:set>
+        </property>
+    </bean>
+
+    <!-- The VBOX layout -->
+    <bean id="vboxLayout" class="de.terrestris.shogun2.model.layout.Layout">
+        <property name="type" value="vbox" />
+        <property name="propertyHints">
+            <util:set>
+                <value>flex</value>
+                <value>height</value>
+            </util:set>
+        </property>
+        <property name="propertyMusts">
+            <util:set>
+            </util:set>
+        </property>
+    </bean>
+
+    <!-- Extent -->
+    <bean id="mapConfigExtent" class="de.terrestris.shogun2.model.layer.util.Extent">
+        <property name="lowerLeft">
+            <bean class="java.awt.geom.Point2D$Double">
+                <constructor-arg index="0" value="-20026376.39" />
+                <constructor-arg index="1" value="-20048966.10" />
+            </bean>
+        </property>
+        <property name="upperRight">
+            <bean class="java.awt.geom.Point2D$Double">
+                <constructor-arg index="0" value="20026376.39" />
+                <constructor-arg index="1" value="20048966.10" />
+            </bean>
+        </property>
+    </bean>
+
+    <!-- Define the MapConfig -->
+    <bean id="mapConfig" class="de.terrestris.shogun2.model.map.MapConfig">
+        <property name="name" value="default" />
+        <property name="center">
+            <bean class="java.awt.geom.Point2D$Double">
+                <constructor-arg index="0" value="1095801" />
+                <constructor-arg index="1" value="6726458" />
+            </bean>
+        </property>
+        <property name="minResolution" ref="res01" />
+        <property name="maxResolution" ref="res19" />
+        <property name="resolutions" ref="defaultResolutions" />
+        <property name="extent">
+            <ref bean="mapConfigExtent" />
+        </property>
+        <property name="projection" value="3857" />
+        <property name="rotation" value="0" />
+        <property name="zoom" value="5" />
+    </bean>
+
+    <!-- Define map controls -->
+    <bean id="controlAttribution" class="de.terrestris.shogun2.model.map.MapControl">
+        <property name="mapControlName" value="Attribution" />
+    </bean>
+
+    <bean id="controlZoom" class="de.terrestris.shogun2.model.map.MapControl">
+        <property name="mapControlName" value="Zoom" />
+    </bean>
+
+    <bean id="controlRotate" class="de.terrestris.shogun2.model.map.MapControl">
+        <property name="mapControlName" value="Rotate" />
+    </bean>
+
+    <bean id="controlZoomSlider" class="de.terrestris.shogun2.model.map.MapControl">
+        <property name="mapControlName" value="ZoomSlider" />
+    </bean>
+
+    <bean id="controlScaleLine" class="de.terrestris.shogun2.model.map.MapControl">
+        <property name="mapControlName" value="ScaleLine" />
+        <property name="mapControlProperties">
+            <util:map>
+                <entry key="units" value="metric" />
+            </util:map>
+        </property>
+    </bean>
+
+    <!-- Define the Layers -->
+    <bean id="osmWmsLayerTileGridExtent" class="de.terrestris.shogun2.model.layer.util.Extent">
+        <property name="lowerLeft">
+            <bean class="java.awt.geom.Point2D$Double">
+                <constructor-arg index="0" value="-20026376.39" />
+                <constructor-arg index="1" value="-20048966.10" />
+            </bean>
+        </property>
+        <property name="upperRight">
+            <bean class="java.awt.geom.Point2D$Double">
+                <constructor-arg index="0" value="20026376.39" />
+                <constructor-arg index="1" value="20048966.10" />
+            </bean>
+        </property>
+    </bean>
+
+    <bean id="osmWmsLayerTileGrid" class="de.terrestris.shogun2.model.layer.util.TileGrid">
+        <property name="type" value="TileGrid" />
+        <property name="tileGridOrigin">
+            <bean class="java.awt.geom.Point2D$Double">
+                <constructor-arg index="0" value="0" />
+                <constructor-arg index="1" value="0" />
+            </bean>
+        </property>
+        <property name="tileGridExtent" ref="osmWmsLayerTileGridExtent" />
+        <property name="tileSize" value="256" />
+        <property name="tileGridResolutions">
+            <util:list>
+                <ref bean="res01" />
+                <ref bean="res02" />
+                <ref bean="res03" />
+                <ref bean="res04" />
+                <ref bean="res05" />
+                <ref bean="res06" />
+                <ref bean="res07" />
+                <ref bean="res08" />
+                <ref bean="res09" />
+                <ref bean="res10" />
+                <ref bean="res11" />
+                <ref bean="res12" />
+                <ref bean="res13" />
+                <ref bean="res14" />
+                <ref bean="res15" />
+                <ref bean="res16" />
+                <ref bean="res17" />
+                <ref bean="res18" />
+                <ref bean="res19" />
+            </util:list>
+        </property>
+    </bean>
+
+    <bean id="tileWMSDataSourceTemplate" class="de.terrestris.shogun2.model.layer.source.TileWmsLayerDataSource" abstract="true">
+        <property name="type" value="TileWMS" />
+        <property name="width" value="256" />
+        <property name="height" value="256" />
+        <property name="version" value="1.1.0" />
+        <property name="tileGrid" ref="osmWmsLayerTileGrid" />
+    </bean>
+
+    <bean id="osmWmsLayerDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="http://ows.terrestris.de/osm/service?" />
+        <property name="layerNames" value="OSM-WMS" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="osmWmsLayerGrayDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="http://ows.terrestris.de/osm-gray/service?" />
+       <property name="layerNames" value="OSM-WMS" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="actionsLayerDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="/shogun2-webapp/geoserver.action" />
+        <property name="layerNames" value="progemis:ACTIONS" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="riversLayerDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="/shogun2-webapp/geoserver.action" />
+        <property name="layerNames" value="progemis:RIVERS" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="countriesLakesLayerDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="/shogun2-webapp/geoserver.action" />
+        <property name="layerNames" value="progemis:COUNTRIES_LAKES" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="populatedPlacesLayerDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="/shogun2-webapp/geoserver.action" />
+        <property name="layerNames" value="progemis:POPULATED_PLACES" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="riversLakesCenterlinesLayerDataSource" parent="tileWMSDataSourceTemplate">
+        <property name="url" value="/shogun2-webapp/geoserver.action" />
+        <property name="layerNames" value="progemis:RIVERS_LAKES_CENTERLINES" />
+        <property name="layerStyles" value="" />
+    </bean>
+
+    <bean id="osmWmsLayerAppearance" class="de.terrestris.shogun2.model.layer.appearance.LayerAppearance">
+        <property name="attribution" value="© &lt;a href='http://www.openstreetmap.org/copyright'&gt;OpenStreetMap contributors&lt;/a&gt; &lt;br&gt;" />
+        <property name="maxResolution" ref="res01" />
+        <property name="minResolution" ref="res19" />
+        <property name="opacity" value="1" />
+        <property name="visible" value="true" />
+    </bean>
+
+    <bean id="actionsLayerAppearance" class="de.terrestris.shogun2.model.layer.appearance.LayerAppearance">
+        <property name="maxResolution" ref="res01" />
+        <property name="minResolution" ref="res19" />
+        <property name="opacity" value="1" />
+        <property name="visible" value="true" />
+        <property name="hoverTemplate" value="{group_long}" />
+    </bean>
+
+    <bean id="riversLayerAppearance" class="de.terrestris.shogun2.model.layer.appearance.LayerAppearance">
+        <property name="maxResolution" ref="res01" />
+        <property name="minResolution" ref="res19" />
+        <property name="opacity" value="1" />
+        <property name="visible" value="true" />
+        <property name="hoverTemplate" value="{name}" />
+    </bean>
+
+    <bean id="countriesLakesLayerAppearance" class="de.terrestris.shogun2.model.layer.appearance.LayerAppearance">
+        <property name="maxResolution" ref="res01" />
+        <property name="minResolution" ref="res19" />
+        <property name="opacity" value="1" />
+        <property name="visible" value="true" />
+    </bean>
+
+    <bean id="populatedPlacesLayerAppearance" class="de.terrestris.shogun2.model.layer.appearance.LayerAppearance">
+        <property name="maxResolution" ref="res01" />
+        <property name="minResolution" ref="res19" />
+        <property name="opacity" value="1" />
+        <property name="visible" value="true" />
+    </bean>
+
+    <bean id="riversLakesCenterlinesLayerAppearance" class="de.terrestris.shogun2.model.layer.appearance.LayerAppearance">
+        <property name="maxResolution" ref="res01" />
+        <property name="minResolution" ref="res19" />
+        <property name="opacity" value="1" />
+        <property name="visible" value="true" />
+    </bean>
+
+    <bean id="osmWmsLayer" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="OSM-WMS" />
+        <property name="source" ref="osmWmsLayerDataSource" />
+        <property name="appearance" ref="osmWmsLayerAppearance" />
+    </bean>
+
+    <bean id="osmWmsLayerGray" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="OSM-WMS GRAY" />
+        <property name="source" ref="osmWmsLayerGrayDataSource" />
+        <property name="appearance" ref="osmWmsLayerAppearance" />
+    </bean>
+
+    <bean id="actionsLayer" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="Maßnahmen" />
+        <property name="source" ref="actionsLayerDataSource" />
+        <property name="appearance" ref="actionsLayerAppearance" />
+        <property name="hoverable" value="true" />
+        <property name="userPermissions">
+            <!-- Allow that the default user to READ this application -->
+            <util:map>
+                <entry key-ref="defaultUser" value-ref="readAccessPermissionCollection" />
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="riversLayer" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="Flüsse (Maßnahmen)" />
+        <property name="source" ref="riversLayerDataSource" />
+        <property name="appearance" ref="riversLayerAppearance" />
+        <property name="hoverable" value="true" />
+        <property name="userPermissions">
+            <!-- Allow that the default user to READ this application -->
+            <util:map>
+                <entry key-ref="defaultUser" value-ref="readAccessPermissionCollection" />
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="countriesLakesLayer" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="Länder" />
+        <property name="source" ref="countriesLakesLayerDataSource" />
+        <property name="appearance" ref="countriesLakesLayerAppearance" />
+        <property name="hoverable" value="true" />
+        <property name="userPermissions">
+            <!-- Allow that the default user to READ this application -->
+            <util:map>
+                <entry key-ref="defaultUser" value-ref="readAccessPermissionCollection" />
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="populatedPlacesLayer" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="Orte" />
+        <property name="source" ref="populatedPlacesLayerDataSource" />
+        <property name="appearance" ref="populatedPlacesLayerAppearance" />
+        <property name="hoverable" value="true" />
+        <property name="userPermissions">
+            <!-- Allow that the default user to READ this application -->
+            <util:map>
+                <entry key-ref="defaultUser" value-ref="readAccessPermissionCollection" />
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="riversLakesCenterlinesLayer" class="de.terrestris.appshogun.model.ProjectLayer">
+        <property name="name" value="Flüsse" />
+        <property name="source" ref="riversLakesCenterlinesLayerDataSource" />
+        <property name="appearance" ref="riversLakesCenterlinesLayerAppearance" />
+        <property name="hoverable" value="true" />
+        <property name="userPermissions">
+            <!-- Allow that the default user to READ this application -->
+            <util:map>
+                <entry key-ref="defaultUser" value-ref="readAccessPermissionCollection" />
+            </util:map>
+        </property>
+    </bean>
+
+    <!-- Define the Map -->
+    <bean id="mapModule" class="de.terrestris.shogun2.model.module.Map">
+        <property name="name" value="Main Map" />
+        <property name="xtype" value="shogun-component-map" />
+        <property name="mapConfig" ref="mapConfig" />
+        <property name="mapLayers">
+            <util:list>
+                <ref bean="osmWmsLayer" />
+                <ref bean="osmWmsLayerGray" />
+                <ref bean="actionsLayer" />
+                <ref bean="riversLayer" />
+            </util:list>
+        </property>
+        <property name="mapControls">
+            <util:set>
+                <ref bean="controlAttribution" />
+                <ref bean="controlZoom" />
+                <ref bean="controlRotate" />
+                <ref bean="controlZoomSlider" />
+                <ref bean="controlScaleLine" />
+            </util:set>
+        </property>
+        <property name="properties">
+             <util:map>
+                <entry key="x" value="0" />
+                <entry key="y" value="0" />
+                <entry key="width" value="100%" />
+                <entry key="height" value="100%" />
+            </util:map>
+        </property>
+    </bean>
+
+    <!-- Define common map tools -->
+    <bean id="zoomInModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Zoom in button" />
+        <property name="defaultButton" value="true" />
+        <property name="xtype" value="basigx-button-zoomin" />
+        <property name="glyph" value="xf00e@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="zoomOutModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Zoom out button" />
+        <property name="defaultButton" value="true" />
+        <property name="xtype" value="basigx-button-zoomout" />
+        <property name="glyph" value="xf010@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="zoomToExtentModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Zoom to extent button" />
+        <property name="defaultButton" value="true" />
+        <property name="xtype" value="shogun-button-zoomtoextent" />
+        <property name="glyph" value="xf0b2@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="stepBackModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Step back to previous extent button" />
+        <property name="defaultButton" value="true" />
+        <property name="xtype" value="shogun-button-stepback" />
+        <property name="glyph" value="xf060@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="stepForwardModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Step forward to next extent button" />
+        <property name="defaultButton" value="true" />
+        <property name="xtype" value="shogun-button-stepforward" />
+        <property name="glyph" value="xf061@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="hsiToolsModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Activate hover-select tool" />
+        <property name="defaultButton" value="false" />
+        <property name="xtype" value="basigx-button-hsi" />
+        <property name="glyph" value="xf05a@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="printModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Print button" />
+        <property name="defaultButton" value="false" />
+        <property name="xtype" value="shogun-button-print" />
+        <property name="glyph" value="xf02f@FontAwesome" />
+        <property name="properties">
+            <util:map>
+                <entry key="printUrl" value="${printservlet.interceptorUrl}"/>
+                <entry key="ui" value="shogun-tools" />
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="showMeasureToolsModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Show measure tools button" />
+        <property name="defaultButton" value="false" />
+        <property name="xtype" value="shogun-button-showmeasuretoolspanel" />
+        <property name="glyph" value="xf105@Flaticon" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="showRedliningToolsModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Show redlining tools button" />
+        <property name="defaultButton" value="false" />
+        <property name="xtype" value="shogun-button-showredliningtoolspanel" />
+        <property name="glyph" value="xf040@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="showWorkstateToolsModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Show workstate tools button" />
+        <property name="defaultButton" value="false" />
+        <property name="xtype" value="shogun-button-showworkstatetoolspanel" />
+        <property name="glyph" value="xf108@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="showAddWmsToolsModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Show addwms tools button" />
+        <property name="xtype" value="shogun-button-addwms" />
+        <property name="glyph" value="xf278@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="showMetaToolbarModule" class="de.terrestris.shogun2.model.module.Button">
+        <property name="name" value="Show meta toolbar button" />
+        <property name="xtype" value="shogun-button-showmetapanel" />
+        <property name="glyph" value="xf0ac@FontAwesome" />
+        <property name="properties">
+             <util:map>
+                <entry key="scale" value="small" />
+                <entry key="ui" value="shogun-tools" />
+             </util:map>
+        </property>
+    </bean>
+
+    <bean id="metaToolbarModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Meta info toolbar for the map" />
+        <property name="xtype" value="shogun-panel-metainfos" />
+    </bean>
+
+    <!-- Define the Tools Toolbar -->
+    <bean id="toolsModule" class="de.terrestris.shogun2.model.module.CompositeModule">
+        <property name="name" value="Tools Toolbar" />
+        <property name="xtype" value="toolbar" />
+        <property name="properties">
+            <util:map>
+                <entry key="vertical" value="true" />
+                <entry key="width" value="50" />
+                <entry key="x" value="0" />
+                <entry key="y" value="0" />
+                <entry key="cls" value="map-tools" />
+            </util:map>
+        </property>
+        <property name="subModules">
+            <util:list value-type="de.terrestris.shogun2.model.module.Module">
+                <ref bean="zoomInModule" />
+                <ref bean="zoomOutModule" />
+                <ref bean="zoomToExtentModule" />
+                <ref bean="stepBackModule" />
+                <ref bean="stepForwardModule" />
+                <ref bean="hsiToolsModule" />
+                <ref bean="printModule" />
+                <ref bean="showMeasureToolsModule" />
+                <ref bean="showRedliningToolsModule" />
+                <ref bean="showWorkstateToolsModule" />
+                <ref bean="showAddWmsToolsModule" />
+            </util:list>
+        </property>
+    </bean>
+
+    <!-- Define the MapContainer -->
+    <bean id="mapContainer" class="de.terrestris.shogun2.model.module.CompositeModule">
+        <property name="name" value="Map Container" />
+        <property name="xtype" value="container" />
+        <property name="layout" ref="absoluteLayout"/>
+        <property name="properties">
+            <util:map>
+                <entry key="width" value="100%" />
+                <entry key="height" value="100%" />
+                <entry key="collapsible" value="false" />
+                <entry key="split" value="true" />
+                <entry key="region" value="center" />
+            </util:map>
+        </property>
+        <property name="subModules">
+            <util:list value-type="de.terrestris.shogun2.model.module.Module">
+                <ref bean="mapModule" />
+                <ref bean="showMetaToolbarModule" />
+                <ref bean="metaToolbarModule" />
+                <ref bean="toolsModule" />
+            </util:list>
+        </property>
+    </bean>
+
+    <!-- Define the Header -->
+    <bean id="headerLogoModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Project Logo Image" />
+        <property name="xtype" value="image" />
+        <property name="properties">
+            <util:map>
+                <entry key="src" value="resources/images/shogun-logo-full-150px.png" />
+                <entry key="cls" value="viewport-header-logo" />
+                <entry key="height" value="43" />
+            </util:map>
+        </property>
+    </bean>
+
+    <!-- Login/logout button Module -->
+    <bean id="loginButtonModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Login Button" />
+        <property name="xtype" value="shogun-login-logout-button" />
+    </bean>
+
+    <bean id="translateToDeModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Translate to German Button" />
+        <property name="xtype" value="shogun-translation-de-button" />
+    </bean>
+
+    <bean id="translateToEnModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Translate to English Button" />
+        <property name="xtype" value="shogun-translation-en-button" />
+    </bean>
+
+    <bean id="userBatchModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="User Batch" />
+        <property name="xtype" value="shogun-container-user-batch" />
+    </bean>
+
+    <!--  Define the Search -->
+    <bean id="multiSearchModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Gazetteer and Object Search" />
+        <property name="xtype" value="shogun-form-field-multisearch" />
+        <property name="properties">
+            <util:map>
+                <entry key="width" value="600" />
+                <entry key="emptyText" value="..." />
+                <entry key="hideTrigger" value="true" />
+                <entry key="minChars" value="3"/>
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="tbSpacerModule" class="de.terrestris.shogun2.model.module.Module">
+        <property name="name" value="Toolbar spacer" />
+        <property name="xtype" value="tbspacer" />
+        <property name="properties">
+            <util:map>
+                <entry key="flex" value="1" />
+            </util:map>
+        </property>
+    </bean>
+
+    <bean id="headerModule" class="de.terrestris.shogun2.model.module.CompositeModule">
+        <property name="name" value="Viewport Header" />
+        <property name="xtype" value="shogun-toolbar-header" />
+        <property name="properties">
+            <util:map>
+                <entry key="region" value="north" />
+            </util:map>
+        </property>
+        <property name="subModules">
+            <util:list value-type="de.terrestris.shogun2.model.module.Module">
+                <ref bean="headerLogoModule" />
+                <ref bean="tbSpacerModule" />
+                <ref bean="multiSearchModule" />
+                <ref bean="tbSpacerModule" />
+                <ref bean="translateToDeModule" />
+                <ref bean="translateToEnModule" />
+                <ref bean="loginButtonModule" />
+                <ref bean="userBatchModule" />
+            </util:list>
+        </property>
+    </bean>
+
+    <!-- Define the LayerTree -->
+    <bean id="layerTreeModule" class="de.terrestris.shogun2.model.module.CompositeModule">
+        <property name="name" value="Legend Tree" />
+        <property name="xtype" value="shogun-panel-legendtree" />
+        <property name="properties">
+            <util:map>
+                <entry key="region" value="west" />
+                <entry key="title" value="Layer Panel" />
+                <entry key="split" value="true" />
+            </util:map>
+        </property>
+    </bean>
+
+    <!-- Define the Viewport -->
+    <bean id="viewportModule" class="de.terrestris.shogun2.model.module.CompositeModule">
+        <property name="name" value="Viewport with Border Layout" />
+        <property name="xtype" value="viewport" />
+        <property name="layout" ref="borderLayout" />
+        <property name="subModules">
+            <util:list value-type="de.terrestris.shogun2.model.module.Module">
+                <ref bean="mapContainer" />
+                <ref bean="headerModule" />
+                <ref bean="layerTreeModule" />
+            </util:list>
+        </property>
+    </bean>
+
+    <bean id="readAccessPermissionCollection" class="de.terrestris.shogun2.model.security.PermissionCollection">
+      <property name="permissions">
+          <util:set>
+              <value>READ</value>
+          </util:set>
+      </property>
+    </bean>
+
+    <bean id="createAccessPermissionCollection" class="de.terrestris.shogun2.model.security.PermissionCollection">
+      <property name="permissions">
+          <util:set>
+              <value>READ</value>
+              <value>CREATE</value>
+          </util:set>
+      </property>
+    </bean>
+
+    <bean id="updateAccessPermissionCollection" class="de.terrestris.shogun2.model.security.PermissionCollection">
+      <property name="permissions">
+          <util:set>
+              <value>READ</value>
+              <value>CREATE</value>
+              <value>UPDATE</value>
+          </util:set>
+      </property>
+    </bean>
+
+    <bean id="fullAccessPermissionCollection" class="de.terrestris.shogun2.model.security.PermissionCollection">
+      <property name="permissions">
+          <util:set>
+              <value>READ</value>
+              <value>CREATE</value>
+              <value>UPDATE</value>
+              <value>DELETE</value>
+          </util:set>
+      </property>
+    </bean>
+
+    <!-- Define applications -->
+    <bean id="defaultApplication" class="de.terrestris.appshogun.model.ProjectApplication">
+        <property name="name" value="Default Application" />
+        <property name="description" value="Default Application" />
+        <property name="language" value="de" />
+        <property name="viewport" ref="viewportModule" />
+        <property name="layerTree" ref="defaultAppLayerTreeRootNode" />
+        <property name="activeTools">
+            <util:list>
+                <ref bean="zoomInModule" />
+                <ref bean="zoomOutModule" />
+                <ref bean="zoomToExtentModule" />
+                <ref bean="stepBackModule" />
+                <ref bean="stepForwardModule" />
+                <ref bean="hsiToolsModule" />
+                <ref bean="printModule" />
+                <ref bean="showMeasureToolsModule" />
+                <ref bean="showRedliningToolsModule" />
+                <ref bean="showWorkstateToolsModule" />
+                <ref bean="showAddWmsToolsModule" />
+                <ref bean="showMetaToolbarModule" />
+            </util:list>
+        </property>
+        <property name="userPermissions">
+            <!-- Allow that the default user to READ this application -->
+            <util:map>
+                <entry key-ref="defaultUser" value-ref="readAccessPermissionCollection" />
+                <entry key-ref="exampleGroup1SubAdmin" value-ref="fullAccessPermissionCollection" />
+            </util:map>
+        </property>
+    </bean>
+
+        <!-- The default interceptor rules -->
+    <bean id="defaultWMSRequestInterceptorRule" class="de.terrestris.shogun2.model.interceptor.InterceptorRule">
+        <property name="event" value="REQUEST"/>
+        <property name="rule" value="MODIFY"/>
+        <property name="service" value="WMS"/>
+    </bean>
+    <bean id="defaultWMSResponseInterceptorRule" class="de.terrestris.shogun2.model.interceptor.InterceptorRule">
+        <property name="event" value="RESPONSE"/>
+        <property name="rule" value="MODIFY"/>
+        <property name="service" value="WMS"/>
+    </bean>
+    <bean id="defaultWFSRequestInterceptorRule" class="de.terrestris.shogun2.model.interceptor.InterceptorRule">
+        <property name="event" value="REQUEST"/>
+        <property name="rule" value="MODIFY"/>
+        <property name="service" value="WFS"/>
+    </bean>
+    <bean id="defaultWFSResponseInterceptorRule" class="de.terrestris.shogun2.model.interceptor.InterceptorRule">
+        <property name="event" value="RESPONSE"/>
+        <property name="rule" value="ALLOW"/>
+        <property name="service" value="WFS"/>
+    </bean>
+    <bean id="defaultWCSRequestInterceptorRule" class="de.terrestris.shogun2.model.interceptor.InterceptorRule">
+        <property name="event" value="REQUEST"/>
+        <property name="rule" value="MODIFY"/>
+        <property name="service" value="WCS"/>
+    </bean>
+    <bean id="defaultWCSResponseInterceptorRule" class="de.terrestris.shogun2.model.interceptor.InterceptorRule">
+        <property name="event" value="RESPONSE"/>
+        <property name="rule" value="ALLOW"/>
+        <property name="service" value="WCS"/>
+    </bean>
+
+    <!-- The Resolutions -->
+    <bean id="res01" class="java.lang.Double">
+        <constructor-arg value="156543.03390625"></constructor-arg>
+    </bean>
+    <bean id="res02" class="java.lang.Double">
+        <constructor-arg value="78271.516953125"></constructor-arg>
+    </bean>
+    <bean id="res03" class="java.lang.Double">
+        <constructor-arg value="39135.7584765625"></constructor-arg>
+    </bean>
+    <bean id="res04" class="java.lang.Double">
+        <constructor-arg value="19567.87923828125"></constructor-arg>
+    </bean>
+    <bean id="res05" class="java.lang.Double">
+        <constructor-arg value="9783.939619140625"></constructor-arg>
+    </bean>
+    <bean id="res06" class="java.lang.Double">
+        <constructor-arg value="4891.9698095703125"></constructor-arg>
+    </bean>
+    <bean id="res07" class="java.lang.Double">
+        <constructor-arg value="2445.9849047851562"></constructor-arg>
+    </bean>
+    <bean id="res08" class="java.lang.Double">
+        <constructor-arg value="1222.9924523925781"></constructor-arg>
+    </bean>
+    <bean id="res09" class="java.lang.Double">
+        <constructor-arg value="611.4962261962891"></constructor-arg>
+    </bean>
+    <bean id="res10" class="java.lang.Double">
+        <constructor-arg value="305.74811309814453"></constructor-arg>
+    </bean>
+    <bean id="res11" class="java.lang.Double">
+        <constructor-arg value="152.87405654907226"></constructor-arg>
+    </bean>
+    <bean id="res12" class="java.lang.Double">
+        <constructor-arg value="76.43702827453613"></constructor-arg>
+    </bean>
+    <bean id="res13" class="java.lang.Double">
+        <constructor-arg value="38.218514137268066"></constructor-arg>
+    </bean>
+    <bean id="res14" class="java.lang.Double">
+        <constructor-arg value="19.109257068634033"></constructor-arg>
+    </bean>
+    <bean id="res15" class="java.lang.Double">
+        <constructor-arg value="9.554628534317017"></constructor-arg>
+    </bean>
+    <bean id="res16" class="java.lang.Double">
+        <constructor-arg value="4.777314267158508"></constructor-arg>
+    </bean>
+    <bean id="res17" class="java.lang.Double">
+        <constructor-arg value="2.388657133579254"></constructor-arg>
+    </bean>
+    <bean id="res18" class="java.lang.Double">
+        <constructor-arg value="1.194328566789627"></constructor-arg>
+    </bean>
+    <bean id="res19" class="java.lang.Double">
+        <constructor-arg value="0.5971642833948135"></constructor-arg>
+    </bean>
+
+    <!-- Default resolutions -->
+    <util:list id="defaultResolutions" value-type="java.lang.Double">
+        <ref bean="res01" />
+        <ref bean="res02" />
+        <ref bean="res03" />
+        <ref bean="res04" />
+        <ref bean="res05" />
+        <ref bean="res06" />
+        <ref bean="res07" />
+        <ref bean="res08" />
+        <ref bean="res09" />
+        <ref bean="res10" />
+        <ref bean="res11" />
+        <ref bean="res12" />
+        <ref bean="res13" />
+        <ref bean="res14" />
+        <ref bean="res15" />
+        <ref bean="res16" />
+        <ref bean="res17" />
+        <ref bean="res18" />
+        <ref bean="res19" />
+    </util:list>
+
+</beans>

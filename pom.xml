@@ -4,16 +4,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.terrestris</groupId>
-    <artifactId>momo</artifactId>
-    <version>0.0.9-SNAPSHOT</version>
+    <artifactId>shogun2-webapp</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>momo</name>
+    <name>shogun2-webapp</name>
 
     <scm>
-        <url>https://github.com/terrestris/momo3-backend</url>
-        <connection>scm:git:git@github.com:terrestris/momo3-backend.git</connection>
-        <developerConnection>scm:git:git@github.com:terrestris/momo3-backend.git</developerConnection>
+        <url>https://github.com/terrestris/shogun2-webapp</url>
+        <connection>scm:git:git@github.com:terrestris/shogun2-webapp.git</connection>
+        <developerConnection>scm:git:git@github.com:terrestris/shogun2-webapp.git</developerConnection>
     </scm>
 
     <repositories>
@@ -122,27 +122,6 @@
                 <skip-build-javascript-resources>false</skip-build-javascript-resources>
                 <deploy.server.url>http://188.40.113.28:8080/manager/text</deploy.server.url>
                 <deploy.server.id>momo-test</deploy.server.id>
-                <deploy.server.path>/momo</deploy.server.path>
-            </properties>
-        </profile>
-
-        <!-- The profile to be used for a production release -->
-        <profile>
-            <id>momo-production-delivery</id>
-            <!-- Activated when -Denv=momo-production-delivery is given as
-                parameter. -->
-            <activation>
-                <property>
-                    <name>env</name>
-                    <value>momo-production-delivery</value>
-                </property>
-            </activation>
-            <properties>
-                <app.profile>prod</app.profile>
-                <skip-jetty-execution>true</skip-jetty-execution>
-                <skip-build-javascript-resources>false</skip-build-javascript-resources>
-                <deploy.server.url>http://188.40.111.158:8080/manager/text</deploy.server.url>
-                <deploy.server.id>momo-prod</deploy.server.id>
                 <deploy.server.path>/momo</deploy.server.path>
             </properties>
         </profile>

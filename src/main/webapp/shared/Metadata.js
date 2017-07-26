@@ -5,7 +5,7 @@
  *
  * Write and read XML
  */
-Ext.define('MoMo.shared.MetadataUtil', {
+Ext.define('SHOGun.shared.MetadataUtil', {
 
     statics: {
         /**

@@ -1,0 +1,89 @@
+package de.terrestris.appshogun.util.serializer;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.web.context.support.SpringBeanAutowiringSupport;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.databind.ser.std.StdSerializer;
+
+import de.terrestris.appshogun.dao.UserGroupRoleDao;
+import de.terrestris.appshogun.model.ProjectUser;
+import de.terrestris.appshogun.model.security.UserGroupRole;
+import de.terrestris.appshogun.service.UserGroupRoleService;
+
+/**
+ *
+ * terrestris GmbH & Co. KG
+ * @author Andre Henn
+ * @author Daniel Koch
+ * @date 31.03.2017
+ *
+ * Custom serializer for instances of {@link ProjectUser}
+ */
+public class ProjectUserSerializer extends StdSerializer<ProjectUser>{
+
+	private static final long serialVersionUID = 1L;
+
+	@Autowired
+	@Qualifier("userGroupRoleService")
+	private UserGroupRoleService<UserGroupRole, UserGroupRoleDao<UserGroupRole>> userGroupRoleService;
+
+	/**
+	 *
+	 */
+	public ProjectUserSerializer(){
+		this(null);
+	}
+
+	public ProjectUserSerializer(Class<ProjectUser> t) {
+		super(t);
+		SpringBeanAutowiringSupport.processInjectionBasedOnCurrentContext(this);
+	}
+
+
+	@Override
+	public void serialize(ProjectUser projectUser, JsonGenerator generator, SerializerProvider provider) throws IOException {
+		generator.writeStartObject();
+		generator.writeNumberField("id", projectUser.getId());
+		generator.writeStringField("accountName", projectUser.getAccountName());
+		generator.writeBooleanField("active", projectUser.isActive());
+		generator.writeObjectField("birthday", projectUser.getBirthday());
+		generator.writeStringField("department", projectUser.getDepartment());
+		generator.writeStringField("email", projectUser.getEmail());
+		generator.writeStringField("firstName", projectUser.getFirstName());
+		generator.writeObjectField("language", projectUser.getLanguage());
+		generator.writeStringField("lastName", projectUser.getLastName());
+		generator.writeStringField("profileImage", projectUser.getProfileImage());
+		generator.writeStringField("telephone", projectUser.getTelephone());
+		/**
+		 * serializes role / groups in the following way [{{ROLENAME}}_GROUP_{{GROUP_ID}}], eg.
+		 * ["ROLE_SUBADMIN_GROUP_13", "ROLE_EDITOR_GROUP_14", "ROLE_USER_GROUP_15"]
+		 */
+		List<UserGroupRole> listRolesPerGroup = this.userGroupRoleService.findUserGroupRolesBy(projectUser);
+		ArrayList<String> groupRoleNames = new ArrayList<>(listRolesPerGroup.size());
+		for (UserGroupRole ugr : listRolesPerGroup) {
+			String roleName = null;
+			if (ugr.getRole() != null) {
+				roleName = ugr.getRole().getName();
+			}
+			String groupId = null;
+			if (ugr.getGroup() != null) {
+				groupId = Integer.toString(ugr.getGroup().getId());
+			}
+			String[] parts = {roleName, "GROUP", groupId};
+
+			groupRoleNames.add(StringUtils.join(parts, '_'));
+		}
+
+		generator.writeObjectField("groupRoles", groupRoleNames);
+		generator.writeEndObject();
+	}
+
+}

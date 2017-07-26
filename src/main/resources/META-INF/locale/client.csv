@@ -1,382 +1,382 @@
-component;property;de;en;mn;Dev-status
-MoMo.client.view.button.AddWms;config.data.title;;;; -
-MoMo.client.view.button.AddWms;config.data.tooltip;WMS hinzufügen;Add WMS; WMS нэмэх; -
-MoMo.client.view.button.AddWms;config.data.windowTitle;WMS hinzufügen;Add WMS; WMS нэмэх; -
-MoMo.client.view.button.ListDocuments;config.data.text;DMS;DMS;DMS;OK
-MoMo.client.view.button.ListDocuments;config.data.tooltip;Dokumentenmanagement;Document management system (DMS);Баримт бичиг зохицуулах систем;OK
-MoMo.client.view.button.LoginLogout;config.data.loginBtnText;Login;Login;Нэвтрэх; -
-MoMo.client.view.button.LoginLogout;config.data.logoutBtnText;Logout;Logout;Гарах;OK
-MoMo.client.view.button.LoginLogout;config.data.logoutConfirmMsgText;Möchten Sie sich wirklich ausloggen?;Do you really want to log out?;Та үнэхээр гарахыг хүсч байна уу?;OK
-MoMo.client.view.button.Print;config.data.tooltip;Karte drucken;Print map;Газрын зураг хэвлэх;OK
-MoMo.client.view.button.ShowMeasureToolsPanel;config.data.tooltip;Messwerkzeuge;Measurement tools;Хэмжилтийн хэрэгслүүд;OK
-MoMo.client.view.button.ShowMetaPanel;config.data.tooltip;Metainformationen anzeigen;Show metadata;Мета-өгөгдлийг харуулах;OK
-MoMo.client.view.button.ShowRedliningToolsPanel;config.data.tooltip;Zeichnen;Draw;Зурах;OK
-MoMo.client.view.button.ShowWorkstateToolsPanel;config.data.tooltip;Arbeitsstand;Workstate;Ажлын байдал;OK
-MoMo.client.view.button.StepBack;config.data.tooltip;Vorherige Ansicht;Previous View;Өмнөх дэлгэц;OK
-MoMo.client.view.button.StepForward;config.data.tooltip;Nächste Ansicht;Next View;Дараагийн дэлгэц;OK
-MoMo.client.view.button.translation.ToEnglish;config.data.tooltipEn;EN;EN;АНГЛИ;OK
-MoMo.client.view.button.translation.ToEnglish;config.data.setLanguageCallbackToastText;Applikationssprache ist jetzt {0};Application language is now {0};Хэл нь одоо байна {0};OK
-MoMo.client.view.button.translation.ToGerman;config.data.tooltipDe;DE;DE;ГЕРМАН;OK
-MoMo.client.view.button.translation.ToGerman;config.data.setLanguageCallbackToastText;Applikationssprache ist jetzt {0};Application language is now {0};Хэл нь одоо байна {0};OK
-MoMo.client.view.button.translation.ToMongolian;config.data.tooltipMn;MN;MN;МОНГОЛ;OK
-MoMo.client.view.button.translation.ToMongolian;config.data.setLanguageCallbackToastText;Applikationssprache ist jetzt {0};Application language is now {0};Хэл нь одоо байна {0};OK
-MoMo.client.view.button.ZoomToExtent;config.data.tooltip;Auf Gesamtansicht zoomen;Zoom to Extent;Хэмжээгээр нь томруулах;OK
-MoMo.client.view.container.MultiSearchSettings;config.data.title;Sucheinstellungen;Search Settings;Хайлтын тохиргоо; -
-MoMo.client.view.container.MultiSearchSettings;config.data.generalSettingsLabel;Allgemeine Einstellungen;General Settings;Ерөнхий тохиргоо; -
-MoMo.client.view.container.MultiSearchSettings;config.data.limitCboxLabel;Auf den sichtbaren Kartenbereich einschränken;Limit to visible extent;Харагдах хэмжээнд нь хязгаарлах; -
-MoMo.client.view.container.MultiSearchSettings;config.data.gazetteerLabel;Gazetteer Suche verwenden;Use Gazetteer Search;Газеттеер хайлт ашиглах; -
-MoMo.client.view.container.MultiSearchSettings;config.data.objectSearchLabel;Object Suche verwenden;Use Object Search;Обьектын хайлт ашиглах; -
-MoMo.client.view.container.MultiSearchSettings;config.data.objectSearchLayersLabel;Layer für Objektsuche;Layer for Object Search;Обьектын хайлтын давхарга; -
-MoMo.client.view.container.MultiSearchSettings;config.data.saveBtnText;Sucheinstellungen speichern;Save search settings;Хайлтын тохиргоог хадгалах; -
-MoMo.client.view.form.field.MultiSearchCombo;config.data.emptyText;Suche ...;Search ...;Хайх; -
-MoMo.client.view.form.field.MultiSearchCombo;config.data.settingsWindowTitle;Sucheinstellungen;Search Settings;Хайх тохиргоо; -
-MoMo.client.view.form.Print;config.data.labelDpi;DPI;DPI;хараахан орчуулагдаагүй;OK
-MoMo.client.view.form.Print;config.data.printButtonSuffix;herunterladen;download;суулгах;OK
-MoMo.client.view.form.Print;config.data.printFormat;pdf;pdf;pdf;OK
-MoMo.client.view.form.Print;config.data.printDownload;Download;Download;суулгах;OK
-MoMo.client.view.form.Print;config.data.printErrorTitle;Fehler;Error;Алдаа;OK
-MoMo.client.view.form.Print;config.data.printErrorMsg;Fehler beim Druck;Error while printing;Хэвлэхэд алдаа гарсан;OK
-MoMo.client.view.form.Print;config.data.formatComboLabel;Ausgabeformat;Output format;Гаралтын формат;OK
-MoMo.client.view.form.Print;config.data.layoutComboLabel;Vorlage;Template;Загвар;OK
-MoMo.client.view.form.Print;config.data.genericFieldSetTitle;Druckeigenschaften;Print properties;Хэвлэх эрэмбэ;OK
-MoMo.client.view.form.Print;config.data.attributesTitle;Attribute;Attributes;Шинж чанар;OK
-MoMo.client.view.form.Print;config.data.scalebarLabel;Maßstabsbalken;Scalebar;Хуваарилах цэс;OK
-MoMo.client.view.form.Print;config.data.northArrowLabel;Nordpfeil;North arrow;Хойд сум;OK
-MoMo.client.view.form.Print;config.data.legendLabel;Legende;Legend;Түүх;OK
-MoMo.client.view.form.Print;config.data.mapTitleLabel;Titel;Title;Нэр;OK
-MoMo.client.view.form.Print;config.data.mapNumberLabel;Kartennummer;Map number;Газрын зургийн дугаар;OK
-MoMo.client.view.form.Print;config.data.titleAuthorName;Autor(en);Author(s);Зохиолч/ид/;OK
-MoMo.client.view.form.Print;config.data.titleDataSource;Datengrundlage;Data source;Өгөгдлийн эх үүсвэр;OK
-MoMo.client.view.form.Print;config.data.titleCoordSystemString;Koordinatensystem;Coordinate system;Зохицуулалтын систем;OK
-MoMo.client.view.form.Print;config.data.coordSystemString;WGS 1984 UTM Zone 48N;WGS 1984 UTM Zone 48N;WGS 1984 UTM Zone 48N;OK
-MoMo.client.view.form.Print;config.data.titleProjString;Projektion;Projection;Төсөөлөл;OK
-MoMo.client.view.form.Print;config.data.projString;Transverse Mercator;Transverse Mercator;Хөндлөн Меркатор;OK
-MoMo.client.view.form.Print;config.data.titleDatumString;Datum;Datum;Бааз;OK
-MoMo.client.view.form.Print;config.data.datumString;WGS 1984;WGS 1984;WGS 1984;OK
-MoMo.client.view.form.Print;config.data.titleScale;Maßstab;Scale;Хуваарь;OK
-MoMo.client.view.form.Print;config.data.titleDate;Stand;State;Нөхцөл байдал;OK
-MoMo.client.view.form.Print;config.data.a4LandscapeTemplateValue;A4 Querformat;A4 Portrait;А4 босоо чиглэлтэй;
-MoMo.client.view.form.Print;config.data.a4PortraitTemplateValue;A4 Hochformat;A4 Landscape;А4 хэвтээ чиглэлтэй;
-MoMo.client.view.grid.ApplicationState;config.data.columnDescriptionText;Beschreibung;Description;Тайлбар;OK
-MoMo.client.view.grid.ApplicationState;config.data.columnUrlText;Link zum Arbeitsstand;Link to application state;Програмын нөхцөлтэй холбох ;OK
-MoMo.client.view.grid.ApplicationState;config.data.columnLastModifiedText;Letzte Änderung;Last modification;Сүүлд хийсэн өөрчлөлт;OK
-MoMo.client.view.grid.ApplicationState;config.data.urlColumnLinkText;Link;Link;Холбоос;OK
-MoMo.client.view.grid.ApplicationState;config.data.deleteBtnText;Löschen;Delete;Устгах;OK
-MoMo.client.view.grid.ApplicationState;config.data.loadBtnText;Laden;Load;Ачаалах;OK
-MoMo.client.view.grid.ApplicationState;config.data.createBtnText;Speichen;Save;Хадгалах;OK
-MoMo.client.view.grid.ApplicationState;config.data.copyToClipboardSuccessMsg;URL erfolgreich in den Zwischenspeicher kopiert.;Successfully copied the URL to clipboard.;URL-ийг санах самбар дээр амжилттай хууллаа. ;OK
-MoMo.client.view.grid.ApplicationState;config.data.copyToClipboardFailureMsg;Fehler beim Speichern der URL in den Zwischenspeicher!;Could not copy the URL to clipboard.;URL-ийг санах самбар дээр хуулж чадсангүй.  ;OK
-MoMo.client.view.grid.ApplicationState;config.data.noSelectionAvailableMsg;Keine Selektion vorhanden!;No selection available!;Сонголт байхгүй!;OK
-MoMo.client.view.grid.ApplicationState;config.data.loadStateSuccessMsg;Arbeitsstand erfolgreich geladen.;Successfully loaded the application state.;Програмын нөхцлийг амжилттай ачааллаа ;OK
-MoMo.client.view.grid.ApplicationState;config.data.loadStateFailureMsg;Fehler beim Laden des Arbeitsstands!;Could not load the application state!;Програмын нөхцлийг ачаалж чадахгүй байна!;OK
-MoMo.client.view.grid.ApplicationState;config.data.createStatePromptMsg;Bitte geben Sie eine Kurzbeschreibung für den neuen Arbeitsstand ein:;Please enter a short description for the application state to create:;Бий болгох програмын нөцлийн талаар товч мэдээлэл оруулах ;OK
-MoMo.client.view.grid.ApplicationState;config.data.createStateSuccessMsg;Arbeitsstand erfolgreich angelegt.;Successfully created the application state.;Програмын нөхцлийг амжилттай бий болгосон;OK
-MoMo.client.view.grid.ApplicationState;config.data.createStateFailureMsg;Fehler beim Anlegen des Arbeitsstands!;Could not create the application state!;Програмын нөхцлийг бий болгож чадсангүй!;OK
-MoMo.client.view.grid.ApplicationState;config.data.deleteStateConfirmMsg;Den ausgewählten Arbeitsstand wirklich löschen?;Do you really want to delete the selected application state?;Та сонгосон программын байдлыг үнэхээр устгахыг хүсч байна уу?;OK
-MoMo.client.view.grid.ApplicationState;config.data.deleteStateSuccessMsg;Arbeitsstand erfolgreich gelöscht.;Successfully removed the application state.;Программын байдлыг амжилттай арилгалаа;OK
-MoMo.client.view.grid.ApplicationState;config.data.deleteStateFailureMsg;Fehler beim Löschen des Arbeitsstands!;Could not delete the application state!;Программын байдлыг устгаж чадсангүй;OK
-MoMo.client.view.grid.ApplicationState;config.data.updateStatePromptMsg;Den ausgewählten Arbeitsstand wirklich überschreiben?;Do you really want to overwrite the selected application state?;Та үнэхээр сонгосон программын байдлыг давхарлаж бичихийг хүсч байна уу?;OK
-MoMo.client.view.grid.ApplicationState;config.data.updateStateSuccessMsg;Arbeitsstand erfolgreich aktualisiert.;Successfully updated the application state.;Программын байдлыг амжилттай шинэчиллээ;OK
-MoMo.client.view.grid.ApplicationState;config.data.updateStateFailureMsg;Fehler bei Aktualisierung des Arbeitsstands!;Could not update the application state!;Программын байдлыг  шинэчилж чадсангүй;OK
-MoMo.client.view.grid.MultiSearchGazetteerGrid;config.data.title;Gazetteer Suche;Gazetteer Search;Газеттеер хайлт  ; -
-MoMo.client.view.grid.MultiSearchGazetteerGrid;config.data.hideToolTooltip;Gazetteer Suche verbergen;Hide Gazetteer Search;Газеттеер хайлтыг нуух; -
-MoMo.client.view.grid.ObjectSearchGrid;config.data.title;Objektsuche;Object Search;Обьектын хайлт; -
-MoMo.client.view.grid.ObjectSearchGrid;config.data.hideToolTooltip;Objektsuche verbergen;Hide Object Search;Обьектын хайлтыг нуух; -
-MoMo.client.view.panel.document.DocumentTree;config.data.title;Dokumentenbaum;Document tree;Баримт бичгийн мод;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.addNewFolderText;Neuen Ordner hinzufügen;Add new folder;Шинэ хавтас нэмэх;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.folderNameText;Ordnername;Folder name;Хавтасны нэр;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.folderNamePromptText;Ordnername eingeben;Enter folder name;Хавтасны шинэ нэр өгөх;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.addNewLeafText;Neues Dokument hinzufügen;Add new document;Шинэ баримт бичиг нэмэх;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.leafNameText;Dokumentname;Document name;Баримт бичгийн нэр;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.leafNamePromptText;Dokumentname hinzufügen;Enter document name;Баримт бичгийн нэрийг оруулах;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.addDocumentText;PDF Datei anhängen/ersetzen;Attach/replace PDF document;PDF-ийг хавсаргах/солих;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.renameFolderText;Ordner umbenennen;Rename folder;Хавтсыг дахин нэрлэх;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.folderNewNamePromptText;Neuen Ordnernamen eingeben;Enter new folder name;Хавтасны шинэ нэр өгөх;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.deleteFolderText;Ordner löschen;Delete folder;Хавтсыг устгах;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.warningTitle;Achtung;Warning;Анхааруулга;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.deleteFolderWarnMsgText;Alle enthaltenen Dokumente werden gelöscht. Sind Sie sicher?;All contained documents will be also deleted. Are you sure?;Бүх агуулсан баримт бичгийг устгана. Та итгэлтэй байна уу?;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.renameLeafText;Dokument umbenennen;Rename document;хараахан орчуулагдаагүй;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.leafNewNamePromptText;Neuen Dokumentennamen eingeben;Enter new document name;хараахан орчуулагдаагүй;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.deleteLeafText;Dokument löschen;Delete document;хараахан орчуулагдаагүй;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.deleteLeafWarnMsgText;Dieses Dokument wird gelöscht. Sind Sie sicher?;This document will be removed from tree. Are you sure?;Уг баримт бичгийг модноос арилгана. Та итгэлтэй байна уу?;OK
-MoMo.client.view.panel.document.DocumentTree;config.data.dragText;Drag and Drop zum Umsortieren;Drag and drop to reorganize;Зохион байгуулахын тулд татаад унагаах; -
-MoMo.client.view.panel.LegendTree;config.data.title;Legende;Legend;Түүх;OK
-MoMo.client.view.panel.MapMetaInformation;config.data.srsPrefix;Bezugssystem;Reference System;Лавлах систем;OK
-MoMo.client.view.panel.MapMetaInformation;config.data.mousePositionLabel;Zeigerposition;Mouse Position;Хулганы байрлал;OK
-MoMo.client.view.panel.MeasurementToolsPanel;config.data.lineTooltip;Strecke messen;Distance measurements;Холын зайны хэмжилтүүд;OK
-MoMo.client.view.panel.MeasurementToolsPanel;config.data.areaTooltip;Fläche messen;Area measurements;Талбайн хэмжилтүүд;OK
-MoMo.client.view.panel.MeasurementToolsPanel;config.data.clickToDrawText;Klicken zum Messen;Click to measure;Хэмжилт хийхээр дарах;OK
-MoMo.client.view.panel.MeasurementToolsPanel;config.data.continueLineMsg;Klicken zum Zeichnen der Strecke;Click to draw line;Шугам зурахаар дарах;OK
-MoMo.client.view.panel.MeasurementToolsPanel;config.data.continuePolygonMsg;Klicken zum Zeichnen der Fläche;Click to draw area;Талбайг зурахаар дарах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawPointsBtnText;Punkt zeichnen;Draw Point;Цэг зурах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawLinesBtnText;Linie zeichnen;Draw Line;Зураас зурах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawPolygonsBtnText;Polygon zeichen;Draw Polygon;Олон өнцөгт зурах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawCirclesBtnText;Kreis zeichnen;Draw circle;Тойрог зурах ;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawRectanglesBtnText;Rechteck zeichnen;Draw rectangle;Дөрвөн өнцөгт зурах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawTextBtnText;Beschriftung einfügen;Add label;Нэр шошго нэмэх;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.drawPostItBtnText;Post-it zeichnen;Draw Post-it;хараахан орчуулагдаагүй;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.copyObjectBtnText;Objekt kopieren;Copy Object;Обьектыг хуулах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.moveObjectBtnText;Objekt verschieben;Move Object;Обьектыг хөдөлгөх;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.modifyObjectBtnText;Objekt modifizieren;Modify Object;Обьектыг өөрчлөх;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.deleteObjectBtnText;Objekt löschen;Delete Object;Обьектыг устгах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.openStyleBtnText;Styler;Styler;Хэв маяг оруулагч;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.postItWindowTitle;Post-it Text eingeben;Enter Post-it Text;Тэмдэглэх текстээ оруулах;OK
-MoMo.client.view.panel.RedliningToolsPanel;config.data.textWindowTitle;Beschriftungstext eingeben;Enter label text;Нэр шошгоны текстийг оруулах;OK
-MoMo.client.view.panel.WorkstateToolsPanel;config.data.loadSaveWorkstateBtnText;Arbeitstände laden/speichern;load/save Workstates;ачааллах/ажлын байдлыг хадгалах;OK
-MoMo.client.view.panel.WorkstateToolsPanel;config.data.permalinkBtnTooltip;Permalink erzeugen;Generate Permalink;Холбоосыг түгээх;NOT OK - not binding
-MoMo.client.view.panel.WorkstateToolsPanel;config.data.permalinkTitle;Link zur Anwendung;URL to application;Программтай холбогдох URL ;NOT OK - not binding
-MoMo.client.view.panel.WorkstateToolsPanel;config.data.applicationStateWinTitle;Arbeitsstände;Application states;Программын статус;OK
-MoMo.client.view.window.document.DocumentPdfUpload;config.data.title;PDF Dokumenten-Upload;PDF document upload;PDF баримт бичгийг байршуулах;OK
-MoMo.client.view.window.document.DocumentPdfUpload;config.data.uploadBtnText;Upload starten;Start upload;Байршуулж эхлэх;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.title;Dokumente;Documents;Баримт бичгүүд;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textOpenSelectedDoc;Dokument öffnen;Open selected document;Сонгосон баримт бичгийг нээх;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textDeleteSelectedDoc;Dokument löschen;Delete selected document;Сонгосон баримт бичгийг устгах;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textCreateNewDoc;Neues Dokument erstellen;Create new document;Шинэ баримт бичиг үүсгэх;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textPromptMessageNewDoc;Bitte neuen Namen für Dokument eingeben;Please enter a name for the new document;Баримт бичигт шинэ нэр өгөх;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textDeleteDoc;Dokument löschen;Delete a document;Баримт бичгийг устгах;OK
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textPromptDeleteDoc;Sind Sie sicher; dass Sie das Dokument {0} löschen wollen?;Are you sure you want to delete this document {0} ?;Та энэ баримт бичгийг устгахдаа итгэлтэй байна уу;OK;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textUnknownError;Ein unbekannter Fehler ist aufgetreten;An unknown error occured.;Танигдаагүй алдаа гарлаа; -
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textCouldNotCreateDocument;Dokument konnte nicht erstellt werden.;Could not create document.;Баримт бичгийг үүсгэж чадсангүй; -
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textCouldNotDeleteDocument;Dokument konnte nicht gelöscht werden.;Could not delete document.;Баримт бичгийг устгаж чадсангүй; -
-MoMo.client.view.window.document.ListDocumentsWindow;config.data.textSuccessDeleteDoc;Dokument {0} wurde erfolgreich gelöscht.;"Successfully deleted the document ""{0}""";Баримт бичгийг амжилттай устгалаа;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.title;Zeichnungsstil;Drawing Style;Зурах хэв маяг;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.pointStyleFieldSetTitle;Punktstil;Point Style;Цэгийн хэв маяг;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.pointStyleRadiusNumberFieldLabel;Punkt Radius;Point Radius;Цэгийн радиус;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.styleStrokeWidthFieldLabel;Strichstärke;Stroke Width;Зураасны өргөн;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.styleStrokeColorFieldLabel;Strichfarbe;Stroke Color;Зураасны өнгө;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.styleFillColorFieldLabel;Füllfarbe;Fill Color;Өнгөөр дүүргэх;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.lineStyleFieldSetTitle;Linienstil;Line Style;Шугамны хэв маяг;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.polygonStyleFieldSetTitle;Polygonstil;Polygon Stile;Олон өнцөгтийн хэв маяг;OK
-MoMo.client.view.window.RedliningStylerWindow;config.data.closeStylerBtnText;Ok;OK;ОК;OK
-MoMo.view.window.PrintWindow;config.data.title;Karte drucken;Print map;Газрын зураг хэвлэх;OK
-MoMo.view.window.WaterDataChartWindow;config.data.title;Gewässerparameter;Water parameters;Усны параметрүүд;OK
-MoMo.view.window.WaterDataChartWindow;config.data.undoZoomBtnText;Rauszoomen;Zoom Out;Томруулах;OK
-MoMo.view.window.WaterDataChartWindow;config.data.altitude;Höhe;Altitude;Өндөр;OK
-MoMo.view.window.WaterDataChartWindow;config.data.dateFieldFromLabel;Von;From;Хаанаас;OK
-MoMo.view.window.WaterDataChartWindow;config.data.dateFieldToLabel;Bis;To;Хаашаа;OK
-MoMo.view.window.WaterDataChartWindow;config.data.updateTimeRangeBtnText;Aktualisieren;Update;Шинэчлэх ;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendTemp;Temperatur;Temperature;Температур;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendLeitfaehigkeit;Leitfähigkeit;Conductivity;Цахилгаан дамжуулалт;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendpH;pH;pH;п-Эйч;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendTruebung;Trübung;Turbidity;Булингар;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendChlorophyll;Chlorophyll;Chlorophyll;Хлорофилл;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendSauerstoff;Sauerstoffsättigung in %;Oxygen saturation in%;Хүчилтөрөгчийн ханалт;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendSauerstoff2;Sauerstoffkonzentration;Oxygen concentration;Хүчилтөрөгчийн концентраци;OK
-MoMo.view.window.WaterDataChartWindow;config.data.chartlegendWasserstand;Wasserstand;Water level;Усны түвшин;OK
-MoMo.view.window.WaterDataChartWindow;config.data.currentDayBtnText;Heute;Today;Өнөөдөр;NOT OK - not binding
-MoMo.view.window.WaterDataChartWindow;config.data.hourLabel;Std;Hours;Цаг;NOT OK - not binding
-MoMo.view.window.WaterDataChartWindow;config.data.minuteLabel;Min;Minutes;Минут;NOT OK - not binding
-BasiGX.view.button.AddWms;config.data.tooltip;WMS hinzufügen;Add WMS; WMS нэмэх; -
-BasiGX.view.button.AddWms;config.data.text;;;; -
-BasiGX.view.button.AddWms;config.data.windowTitle;WMS hinzufügen;Add WMS;  WMS нэмэх; -
-BasiGX.view.button.CoordinateTransform;config.data.tooltip;Koordinaten transformieren und anzeigen;Transform coordinates;Координатуудыг өөрчлөх; -
-BasiGX.view.button.CoordinateTransform;config.data.text;Koordinaten transformieren;Transform coordinates;Координатуудыг өөрчлөх; -
-BasiGX.view.button.CoordinateTransform;config.data.windowTitle;Koordinaten transformieren;Transform coordinates;Координатуудыг өөрчлөх; -
-BasiGX.view.button.Help;config.data.tooltip;Hilfe;Help;Тусламж; -
-BasiGX.view.button.Help;config.data.text;;;; -
-BasiGX.view.button.Hsi;config.data.tooltip;Informationsabfrage;Query object information;Обьектын мэдээллийг хайх; -
-BasiGX.view.button.Hsi;config.data.text;;;; -
-BasiGX.view.button.Measure;config.data.textline;Strecke messen;Measure line;Шугамыг хэмжих ; -
-BasiGX.view.button.Measure;config.data.textpoly;Fläche messen;Measure area;Талбайг хэмжих ; -
-BasiGX.view.button.Measure;config.data.continuePolygonMsg;Klicken zum Zeichnen der Fläche;Click to start measuring the area;Талбайг хэмжиж эхлэхээр дарах; -
-BasiGX.view.button.Measure;config.data.continueLineMsg;Klicken zum Zeichnen der Strecke;Click to start measuring the line;Шугамыг хэмжиж эхлэхээр дарах; -
-BasiGX.view.button.Measure;config.data.clickToDrawText;Klicken zum Messen;Click to start measuring;Хэмжилт хийж эхлэхээр дарах; -
-BasiGX.view.button.Permalink;config.data.tooltip;Permalink erzeugen;Create permalink;Хуудасны холбоос үүсгэх; -
-BasiGX.view.button.Permalink;config.data.text;Permalink;Permalink;Хуудасны холбоос; -
-BasiGX.view.button.Permalink;config.data.windowTitle;Link zur Anwendung;Link to application;Програмтай холбох; -
-BasiGX.view.button.ToggleLegend;config.data.tooltip;Layerauswahl;Show legend;Түүх үзүүлэх; -
-BasiGX.view.button.ToggleLegend;config.data.text;;;; -
-BasiGX.view.button.ZoomIn;config.data.tooltip;Hineinzoomen;Zoom in;Томруулах; -
-BasiGX.view.button.ZoomIn;config.data.text;;;; -
-BasiGX.view.button.ZoomOut;config.data.tooltip;Herauszoomen;Zoom out;Багасгах; -
-BasiGX.view.button.ZoomOut;config.data.text;;;; -
-BasiGX.view.button.ZoomToExtent;config.data.tooltip;Auf Gesamtansicht zoomen;Zoom to maximum extent;Хамгийн дээд хэмжээнд нь хүртэл томруулах; -
-BasiGX.view.button.ZoomToExtent;config.data.text;;;; -
-BasiGX.view.combo.Language;config.data.fieldLabel;;;; -
-BasiGX.view.combo.ScaleCombo;config.data.fieldLabel;;;; -
-BasiGX.view.container.LayerSlider;config.data.disabeldLabelHtml;Aus;Off;Унтраах; -
-BasiGX.view.container.NominatimSearch;config.data.searchTermTextFieldLabel;Suchbegriff;Search term;Хайлтын нэр томьёо; -
-BasiGX.view.container.NominatimSearch;config.data.searchResultGridTitle;Suchergebnisse;Search results;Хайлтын үр дүн; -
-BasiGX.view.container.NominatimSearch;config.data.resetBtnText;Zurücksetzen;Reset;Дахин эхлүүлэх; -
-BasiGX.view.container.OverpassSearch;config.data.searchTermTextFieldLabel;Suchbegriff;Search term;Хайлтын нэр томьёо; -
-BasiGX.view.container.OverpassSearch;config.data.searchCriteriaGridTitle;Suchkategorien;Search criteria;Хайлтын шалгуур; -
-BasiGX.view.container.OverpassSearch;config.data.searchCriteriaLabelTag;OSM-Tag;OSM-Tag;OSM тэмдэглэгээ; -
-BasiGX.view.container.OverpassSearch;config.data.searchCriteriaCategoryTag;Kategorie;Category;Ангилал; -
-BasiGX.view.container.OverpassSearch;config.data.searchCriteriaOccurenceTag;Tag-Häufigkeit;Tag-occurence;Тэмдэглэгээний илрэл; -
-BasiGX.view.container.OverpassSearch;config.data.searchResultGridTitle;Suchergebnisse;Search results;Хайлтын үр дүн; -
-BasiGX.view.container.OverpassSearch;config.data.resetBtnText;Zurücksetzen;Reset;Дахин эхлүүлэх; -
-BasiGX.view.container.OverpassSearch;config.data.noMatchesFoundErrText;Keine passenden Einträge gefunden;No matches found;Холбогдох мэдээлэл олдсонгүй ; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleFieldSetTitle;Punktstil;Point Style;Цэгийн хэв маяг; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleSymbolPanelTitle;Symbol;Symbol;Тэмдэг  ; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleRadiusNumberFieldLabel;Punktradius;Point Radius;Цэгийн радиус; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleStrokeNumberFieldLabel;Strichstärke;Stroke Width;Зураасны өргөн; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleStrokeColorFieldLabel;Strichfarbe;Stroke Color;Зураасны өнгө; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleFillColorFieldLabel;Füllfarbe;Fill Color;Өнгөөр дүүргэх; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleGraphicPanelTitle;Grafik;Graphic;График; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleChooseImgBtnText;Grafik auswählen;Choose Image;Зураг сонгох; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleImgOffsetXSliderLabel;X-Versatz;Graphic Offset X;Х График офсет; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleImgOffsetYSliderLabel;Y-Versatz;Graphic Offset Y;Ү График офсет; -
-BasiGX.view.container.RedlineStyler;config.data.pointStyleImgScaleSliderLabel;Skalierung;Scale;Хуваарь; -
-BasiGX.view.container.RedlineStyler;config.data.lineStyleFieldSetTitle;Linienstil;LineString Style;Шугаман мөрний хэв маяг; -
-BasiGX.view.container.RedlineStyler;config.data.lineStyleStrokeNumberFieldLabel;Strichstärke;Stroke Width;Зураасны өргөн; -
-BasiGX.view.container.RedlineStyler;config.data.lineStyleStrokeColorFieldLabel;Strichfarbe;Stroke Color;Зураасны өнгө; -
-BasiGX.view.container.RedlineStyler;config.data.polygonStyleFieldSetTitle;Flächenstil;Polygon Style;Олон өнцөгтийн хэв маяг; -
-BasiGX.view.container.RedlineStyler;config.data.polygonStyleStrokeNumberFieldLabel;Strichstärke;Stroke Width;Зураасны өргөн; -
-BasiGX.view.container.RedlineStyler;config.data.polygonStyleStrokeColorFieldLabel;Strichfarbe;Stroke Color;Зураасны өнгө; -
-BasiGX.view.container.RedlineStyler;config.data.polygonStyleFillColorFieldLabel;Füllfarbe;Fill Color;Өнгөөр дүүргэх; -
-BasiGX.view.container.RedlineStyler;config.data.pointGrapicDeletedSuccessMsgText;Die Grafik wurden entfernt. Bitte wählen Sie eine neue aus.;The icon has been deleted. Please reassign a new one.;Дүрс устгагдсан. Шинэ тэмдэг өгнө үү. ; -
-BasiGX.view.container.RedlineStyler;config.data.pointGrapicDeletedSuccessMsgTitle;Löschen erfolgreich;Deletion succesfull;Устгал амжилттай; -
-BasiGX.view.container.RedlineStyler;config.data.graphicPoolWindowTitle;Grafikpool;Graphic Pool;Графикийн сан; -
-BasiGX.view.container.Redlining;config.data.drawPointsBtnText;Zeichne Punkte;Draw Points;Цэг зурах; -
-BasiGX.view.container.Redlining;config.data.drawLinesBtnText;Zeichne Linien;Draw Lines;Зураас зурах; -
-BasiGX.view.container.Redlining;config.data.drawPolygonsBtnText;Zeichne Flächen;Draw Polygons;Олон өнцөгт зурах; -
-BasiGX.view.container.Redlining;config.data.drawPostItBtnText;Zeichne Post-It;Draw Post-it;Наадаг цаасан дээр зурах; -
-BasiGX.view.container.Redlining;config.data.copyObjectBtnText;Kopiere Objekt;Copy Object;Обьектыг хуулах; -
-BasiGX.view.container.Redlining;config.data.moveObjectBtnText;Verschiebe Objekt;Move Object;Обьектыг хөдөлгөх; -
-BasiGX.view.container.Redlining;config.data.modifyObjectBtnText;Modifiziere Objekt;Modify Object;Обьектыг өөрчлөх; -
-BasiGX.view.container.Redlining;config.data.deleteObjectBtnText;Entferne Objekt;Delete Object;Обьектыг устгах; -
-BasiGX.view.container.Redlining;config.data.openStyleBtnText;Styler;Styler;Хэв маяг оруулагч; -
-BasiGX.view.container.Redlining;config.data.stylerWindowTitle;Styler;Styler;Хэв маяг оруулагч; -
-BasiGX.view.container.Redlining;config.data.postItWindowTitle;Post-It Text;Enter the Post-its text;Наадаг цаасан дээр бичсэн текстийг оруулах; -
-BasiGX.view.container.Redlining;config.data.postItWindowCreatePostItBtnText;Erstelle Post-It;Create Post-it;Наадаг цаасан дээр текст бичих; -
-BasiGX.view.container.WfsSearch;config.data.searchTermTextFieldLabel;Suchbegriff;Search term;Хайлтын нэр томьёо; -
-BasiGX.view.container.WfsSearch;config.data.searchResultGridTitle;Suchergebnisse;Search results;Хайлтын үр дүн; -
-BasiGX.view.container.WfsSearch;config.data.resetBtnText;Zurücksetzen;Reset;Дахин эхлүүлэх; -
-BasiGX.view.form.AddWms;config.data.queryParamsFieldSetTitle;Anfrageparameter;Query parameters;Хайлтын хэмжигч параметрүүд; -
-BasiGX.view.form.AddWms;config.data.wmsUrlTextFieldLabel;WMS-URL;WMS-URL;WMS-URL; -
-BasiGX.view.form.AddWms;config.data.wmsVersionContainerFieldLabel;Version;Version;Хувилбар; -
-BasiGX.view.form.AddWms;config.data.availableLayesFieldSetTitle;Verfügbare Layer;Available layers;Байгаа давхаргууд ; -
-BasiGX.view.form.AddWms;config.data.resetBtnText;Zurücksetzen;Reset;Дахин эхлүүлэх; -
-BasiGX.view.form.AddWms;config.data.requestLayersBtnText;Verfügbare Layer abfragen;Request available layers;Байгаа давхаргуудыг гаргаж ирэх; -
-BasiGX.view.form.AddWms;config.data.addCheckedLayersBtnText;Ausgewählte Layer hinzufügen;Add selected layers;Сонгосон давхаргуудыг нэмэх; -
-BasiGX.view.form.AddWms;config.data.errorIncompatibleWMS;Der angefragte WMS ist nicht kompatibel zur Anwendung;The requested WMS is not compatible with this application;Гаргаж ирсэн WMS нь уг програмтай нийцэхгүй байна; -
-BasiGX.view.form.AddWms;config.data.errorRequestFailed;Die angegebene URL konte nicht abgefragt werden;Could not reach the desired location;Хүссэн байршилд хүрч чадсангүй; -
-BasiGX.view.form.AddWms;config.data.errorCouldntParseResponse;Die erhaltene Antwort konnte nicht erfolgreich geparst werden;Error while reading the response send by the server;Серверээс илгээсэн хариуг уншиж байхад алдаа гарсан; -
-BasiGX.view.form.CoordinateTransform;config.data.coordFieldSetTitle;Koordinaten;Coordinates;Координатууд; -
-BasiGX.view.form.CoordinateTransform;config.data.coordXFieldLabel;X-Koordinate;X-Coordinate;Х-координат; -
-BasiGX.view.form.CoordinateTransform;config.data.coordYFieldLabel;Y-Koordinate;Y-Coordinate;Ү-координат; -
-BasiGX.view.form.CoordinateTransform;config.data.transformBtnText;Transformieren;Transform;Шилжүүлэх; -
-BasiGX.view.form.CoordinateTransform;config.data.resetFormBtnText;Zurücksetzen;Reset;Дахин эхлүүлэх; -
-BasiGX.view.form.Permalink;config.data.refreshBtnText;Erneuern;Refresh;Сэргээх; -
-BasiGX.view.form.Print;config.data.title;Drucken;Print;Хэвлэх; -
-BasiGX.view.form.Print;config.data.labelDpi;DPI;DPI;DPI; -
-BasiGX.view.form.Print;config.data.printButtonSuffix;anfordern;request;Хүсэлт; -
-BasiGX.view.form.Print;config.data.downloadButtonPrefix;Download;Download;Суулгах; -
-BasiGX.view.form.Print;config.data.printFormat;pdf;pdf;pdf; -
-BasiGX.view.form.Print;config.data.genericFieldSetTitle;Einstellungen;Settings;Тохиргоо; -
-BasiGX.view.panel.GraphicPool;config.data.delButtonText;Löschen;Delete;Устгах; -
-BasiGX.view.panel.GraphicPool;config.data.okBtnText;OK;Ok;Ок; -
-BasiGX.view.panel.GraphicPool;config.data.msgBoxNoElementSelectedText;Keine Grafik ausgewählt;No image selected;Зураг сонгогдоогүй; -
-BasiGX.view.panel.GraphicPool;config.data.closeBtnText;Schließen;Close;Хаах; -
-BasiGX.view.panel.GraphicPool;config.data.chooseImageBtnText;Auswählen;Choose;Сонгох; -
-BasiGX.view.panel.GraphicPool;config.data.uploadBtnText;Hochladen;Upload;Оруулах; -
-BasiGX.view.panel.GraphicPool;config.data.uploadWaitMsg;Bitte warten...;Please wait...;Түр хүлээнэ үү...; -
-BasiGX.view.panel.GraphicPool;config.data.uploadErrorText;Fehler beim Hochladen;Error on upload check file type and size;Оруулахад алдаа гарлаа, файлын хэлбэр ба хэмжээг шалгана уу; -
-BasiGX.view.panel.GraphicPool;config.data.msgConfirmDeletionTpl;Möchten Sie die ausgewählte Grafik wirklich löschen?;Do you really want to delete this picture?;Та үнэхээр энэ зургийг устгамаар байна уу; -
-BasiGX.view.panel.GraphicPool;config.data.graphicDeleteInfoSuccess;Grafik erfolgreich entfernt;Image successfully deleted;Зураг устгах амжилттай устгагсдан; -
-BasiGX.view.panel.GraphicPool;config.data.graphicDeleteInfoError;Fehler beim Entfernen der Grafik;Image deletion failed;Зураг устгах амжилтгүй болсон; -
-BasiGX.view.panel.GraphicPool;config.data.msgDeletionCancelled;Entfernen abgebrochen;Deletion cancelled.;Устгал цуцлагдсан; -
-BasiGX.view.panel.LayerSetChooser;config.data.title;Themen Auswahl;Themes;Сэдвүүд; -
-BasiGX.view.panel.LayerSetChooser;config.data.filterFieldLabel;Filter;Filter;Шүүх; -
-BasiGX.view.panel.MapContainer;config.data.titleLegendPanel;Legende;Legend;Түүх; -
-BasiGX.view.panel.Menu;config.data.closedMenuTitle;Menu schließen;Close menu;Цэс хаах; -
-BasiGX.view.panel.Menu;config.data.openedMenuTitle;Menu anzeigen;Show menu;Цэс үзүүлэх; -
-BasiGX.view.view.GraphicPool;config.data.emptyStoreMsg;Keine Daten gefunden;No data found;Өгөгдөл олдоогүй; -
-Ext.Date;monthNames[];Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember;January,February,March,April,May,June,July,August,September,October,November,December;Нэг,Хоёр,Гурав,Дөрөв,Тав,Зургаа,Долоо,Найм,Ес,Арав,Арван нэг,Арван хоёрдугаар сар; -
-Ext.Date;defaultFormat;d.m.Y;m/d/Y;m/d/Y; -
-Ext.Date;monthNumbers.Jan;0;0;0; -
-Ext.Date;monthNumbers.Feb;1;1;1; -
-Ext.Date;monthNumbers.Mar;2;2;2; -
-Ext.Date;monthNumbers.Apr;3;3;3; -
-Ext.Date;monthNumbers.Mai;4;4;4; -
-Ext.Date;monthNumbers.Jun;5;5;5; -
-Ext.Date;monthNumbers.Jul;6;6;6; -
-Ext.Date;monthNumbers.Aug;7;7;7; -
-Ext.Date;monthNumbers.Sep;8;8;8; -
-Ext.Date;monthNumbers.Okt;9;9;9; -
-Ext.Date;monthNumbers.Nov;10;10;10; -
-Ext.Date;monthNumbers.Dez;11;11;11; -
-Ext.Date;dayNames[];Sonntag;Montag;Даваа гариг;Mittwoch;Donnerstag;Freitag;Samstag;Ням;Даваа;Мягмар;Лхагва;Пүрэв;Баасан;Хагас сайн;х;а;р;а;а;х;а; -;;;;;;;;;;;;;;;
-Ext.form.Basic;waitTitle;Bitte warten...;Please Wait...;Та хүлээнэ үү...; -
-Ext.form.CheckboxGroupExt.form.CheckboxGroup;blankText;Du musst mehr als einen Eintrag aus der Gruppe auswählen;You must select at least one item in this group;Та энэ бүлэг дотор хамгийн багадаа нэг зүйл сонгоно уу; -
-Ext.form.field.Base;invalidText;Der Wert des Feldes ist nicht korrekt;The value in this field is invalid;Энэ хэсгийн утга буруу байна; -
-Ext.form.field.ComboBox;valueNotFoundText;;;; -
-Ext.form.field.ComboBox;defaultListConfig.loadingText;Lade Daten ...;Loading...;Ачаалж байна; -
-Ext.form.field.Date;disabledDaysText;nicht erlaubt;Disabled;Хүчингүй болгосон; -
-Ext.form.field.Date;disabledDatesText;nicht erlaubt;Disabled;Хүчингүй болгосон; -
-Ext.form.field.Date;minText;Das Datum in diesem Feld muss nach dem {0} liegen;The date in this field must be after {0};Энэ хэсгийн огноо {0} дараа байна; -
-Ext.form.field.Date;maxText;Das Datum in diesem Feld muss vor dem {0} liegen;The date in this field must be before {0};Энэ хэсгийн огноо {0} өмнө байна; -
-Ext.form.field.Date;invalidText;{0} ist kein gültiges Datum - es muss im Format {1} eingegeben werden;{0} is not a valid date - it must be in the format {1};{0} бол зөв огноо биш - энэ нь {1} форматанд байх ёстой; -
-Ext.form.field.Date;format;d.m.Y;m/d/y;m/d/y; -
-Ext.form.field.Date;altFormats;j.n.Y|j.n.y|j.n.|j.|j/n/Y|j/n/y|j-n-y|j-n-Y|j/n|j-n|dm|dmy|dmY|j|Y-n-j|Y-m-d;m/d/Y|m-d-y|m-d-Y|m/d|m-d|md|mdy|mdY|d|Y-m-d;m/d/Y|m-d-y|m-d-Y|m/d|m-d|md|mdy|mdY|d|Y-m-d; -
-Ext.form.field.Date;startDay;1;1;1; -
-Ext.form.field.HtmlEditor;createLinkText;Bitte geben Sie die URL für den Link ein:;Please enter the URL for the link:;Энэ холбоосны URL -ийг оруулна уу; -
-Ext.form.field.HtmlEditor;buttonTips.bold.title;Fett (Ctrl+B);Bold (Ctrl+B);Текстийг тодруулах; -
-Ext.form.field.Number;minText;Der Mindestwert für dieses Feld ist {0};The minimum value for this field is {0};Энэ хэсгийн хамгийн бага утга нь {0} ; -
-Ext.form.field.Number;maxText;Der Maximalwert für dieses Feld ist {0};The maximum value for this field is {0};Энэ хэсгийн хамгийн их утга нь {0} ; -
-Ext.form.field.Number;nanText;{0} ist keine Zahl;{0} is not a valid number;{0} бол зөв тоо биш; -
-Ext.form.field.Text;minLengthText;Bitte geben Sie mindestens {0} Zeichen ein;The minimum length for this field is {0};Энэ хэсгийн хамгийн бага урт бол {0} ; -
-Ext.form.field.Text;maxLengthText;Bitte geben Sie maximal {0} Zeichen ein;The maximum length for this field is {0};Энэ хэсгийн хамгийн их урт бол {0} ; -
-Ext.form.field.Text;blankText;Dieses Feld darf nicht leer sein;This field is required;Энэ хэсэг шаардлагатай; -
-Ext.form.field.Text;regexText;;;; -
-Ext.form.field.Text;emptyText;;;; -
-Ext.form.field.Time;maxText;Die Zeit muss gleich oder vor {0} liegen;The time in this field must be equal to or before {0};Энэ хэсгийн хугацаа нь {0} -тэй тэнцүү эсвэл {0} -ий өмнө байна; -
-Ext.form.field.Time;invalidText;{0} ist keine gültige Zeit;{0} is not a valid time; {0} бол зөв хугацаа биш; -
-Ext.form.field.Time;format;H:i;g:i A;g:i A; -
-Ext.form.field.TimeExt.form.field.Time;minText;Die Zeit muss gleich oder nach {0} liegen;The time in this field must be equal to or after {0};Энэ хэсгийн хугацаа нь {0} -тэй тэнцүү эсвэл {0} -ий дараа байна; -
-Ext.form.field.VTypes;alphaText;Dieses Feld darf nur Buchstaben enthalten und _;This field should only contain letters and _;Энэ хэсэг зөвхөн үсэг мөн _ агуулна; -
-Ext.form.field.VTypes;alphanumText;Dieses Feld darf nur Buchstaben und Zahlen enthalten und _;This field should only contain letters numbers and _;Энэ хэсэг зөвхөн үсэг мөн тоо агуулна; -
-Ext.form.field.VTypes;emailText;Dieses Feld sollte eine E-Mail-Adresse enthalten. Format: 'user@example.com';This field should be an e-mail address in the format 'user@example.com';Энэ хэсэг зөвхөн 'user@example.com' гэсэн форматтай цахим шуудангийн хаяг байна; -
-Ext.form.field.VTypes;urlText;Dieses Feld sollte eine URL enthalten. Format: http:'www.example.com';This field should be a URL in the format 'http://www.example.com';Энэ хэсэг нь  'http://www.example.com' форматтай URL байна; -
-Ext.form.RadioGroupExt.form.RadioGroup;blankText;Du musst einen Eintrag aus der Gruppe auswählen;You must select one item in this group;Та энэ бүлэг дотор  нэг зүйл сонгоно уу; -
-Ext.grid.BooleanColumn;falseText;FALSCH;false;Буруу; -
-Ext.grid.BooleanColumnExt.grid.BooleanColumn;trueText;wahr;true;Үнэн; -
-Ext.grid.DateColumnExt.grid.DateColumn;format;d.m.Y;m/d/Y;m/d/Y; -
-Ext.grid.header.Container;sortDescText;Absteigend sortieren;Sort Descending;Бууруулах байдлаар шүүх; -
-Ext.grid.header.Container;sortClearText;Sortierung entfernen;Remove Sorting;Шүүхгүй болгох; -
-Ext.grid.header.Container;columnsText;Spalten;Columns;Баганууд; -
-Ext.grid.header.ContainerExt.grid.header.Container;sortAscText;Aufsteigend sortieren;Sort Ascending;Өсөх байдлаар шүүх; -
-Ext.grid.NumberColumnExt.grid.NumberColumn;format;0.000,00/i;0.000,00/i;0.000,00/i; -
-Ext.grid.plugin.DragDrop;dragText;0} Zeile(n) ausgewählt;{0} selected row{1};{0} сонгосон эгнээ; -
-Ext.grid.PropertyColumnModel;valueText;Wert;Value;Утга; -
-Ext.grid.PropertyColumnModel;dateFormat;d.m.Y;m/j/Y;Сар/Өдөр/Он; -
-Ext.grid.PropertyColumnModel;trueText;wahr;true;Үнэн; -
-Ext.grid.PropertyColumnModel;falseText;FALSCH;false;Буруу; -
-Ext.grid.PropertyColumnModelExt.grid.PropertyColumnModel;nameText;Name;Name;Нэр; -
-Ext.LoadMask;msg;Lade Daten...;Loading...;Ачаалж байна; -
-Ext.grid.Panel;collapsible;Einklappen;Collapse panel;Самбарыг унагах; -
-Ext.grid.Panel;collapsibleText;Einklappen;Collapse panel;Самбарыг унагах; -
-Ext.picker.Date;minText;Dieses Datum liegt von dem erstmöglichen Datum;This date is before the minimum date;Энэ өдөр бол хамгийн бага хугацаанаас өмнө; -
-Ext.picker.Date;maxText;Dieses Datum liegt nach dem letztmöglichen Datum;This date is after the maximum date;Энэ өдөр бол хамгийн их хугацааны дараа; -
-Ext.picker.Date;disabledDaysText;;;; -
-Ext.picker.Date;disabledDatesText;;;; -
-Ext.picker.Date;nextText;Nächster Monat (Strg/Control + Rechts);Next Month (Control+Right);Дараагийн сар (Хянах+Баруун); -
-Ext.picker.Date;prevText;Vorheriger Monat (Strg/Control + Links);Previous Month (Control+Left);Өмнөх сар (Хянах+Зүүн); -
-Ext.picker.Date;monthYearText;Monat auswählen (Strg/Control + Hoch/Runter; um ein Jahr auszuwählen);Choose a month (Control+Up/Down to move years);Сараа сонгох (Хянах+жилийг хөдөлгөхийн тулд дээд/доод); -;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Ext.picker.Date;todayTip;Heute ({0}) (Leertaste);{0} (Spacebar);{0} зай авах; -
-Ext.picker.Date;format;d.m.Y;m/d/y;m/d/y; -
-Ext.picker.Date;startDay;1;1;1; -
-Ext.picker.Date;todayText; Heute;Today;Өнөөдөр; -
-Ext.picker.Month;okText;Ok;OK;ОК; -
-Ext.picker.Month;cancelText;Abbrechen;Cancel;Цуцлах; -
-Ext.tab.Tab;closeText;Diesen Tab schließen;Close this Tab;Энэ хэсгийг хаах; -
-Ext.toolbar.Paging;beforePageText;Seite;Page;Хуудас; -
-Ext.toolbar.Paging;afterPageText;von {0};of {0};{0} -ны ; -
-Ext.toolbar.Paging;firstText;Erste Seite;First Page;Эхний хуудас; -
-Ext.toolbar.Paging;prevText;vorherige Seite;Previous Page;Өмнөх хуудас; -
-Ext.toolbar.Paging;nextText;nächste Seite;Next Page;Дараагийн хуудас; -
-Ext.toolbar.Paging;lastText;letzte Seite;Last Page;Сүүлийн хуудас; -
-Ext.toolbar.Paging;refreshText;Aktualisieren;Refresh;Шинэчлэх ; -
-Ext.toolbar.Paging;displayMsg;Anzeige Eintrag {0} - {1} von {2};Displaying {0} - {1} of {2};Дэлгэцэн дээр үзүүлж байна {0} - {1} of {2}; -
-Ext.toolbar.Paging;emptyMsg;Keine Daten vorhanden;No data to display;Үзүүлэх өгөгдөл байхгүй; -
-Ext.util.Format;thousandSeparator;.;.;.; -
-Ext.util.Format;decimalSeparator;,;,;,; -
-Ext.util.Format;currencySign;€;$;₮; -
-Ext.util.Format;dateFormat;d.m.Y;m/d/Y;m/d/Y; -
-Ext.view.AbstractView;loadingText;Lade Daten...;хараахан орчуулагдаагүй;Ачаалж байна; -
-Ext.view.View;emptyText;;;; -
-Ext.window.MessageBox;buttonText.ok;Ok;OK;OK; -
-Ext.window.MessageBox;buttonText.cancel;Abbrechen;Cancel;Цуцлах; -
-Ext.window.MessageBox;buttonText.yes;Ja;Yes;Тийм; -
-Ext.window.MessageBox;buttonText.no;Nein;No;Үгүй; -
-Ext.window.Window;closeToolText;Fenster schließen;close window;Цонхыг хаах; -
+component;property;de;en;Dev-status
+SHOGun.client.view.button.AddWms;config.data.title;;; -
+SHOGun.client.view.button.AddWms;config.data.tooltip;WMS hinzufügen;Add WMS; -
+SHOGun.client.view.button.AddWms;config.data.windowTitle;WMS hinzufügen;Add WMS; -
+SHOGun.client.view.button.ListDocuments;config.data.text;DMS;DMS;OK
+SHOGun.client.view.button.ListDocuments;config.data.tooltip;Dokumentenmanagement;Document management system (DMS);OK
+SHOGun.client.view.button.LoginLogout;config.data.loginBtnText;Login;Login; -
+SHOGun.client.view.button.LoginLogout;config.data.logoutBtnText;Logout;Logout;OK
+SHOGun.client.view.button.LoginLogout;config.data.logoutConfirmMsgText;Möchten Sie sich wirklich ausloggen?;Do you really want to log out?;OK
+SHOGun.client.view.button.Print;config.data.tooltip;Karte drucken;Print map;OK
+SHOGun.client.view.button.ShowMeasureToolsPanel;config.data.tooltip;Messwerkzeuge;Measurement tools;OK
+SHOGun.client.view.button.ShowMetaPanel;config.data.tooltip;Metainformationen anzeigen;Show metadata;OK
+SHOGun.client.view.button.ShowRedliningToolsPanel;config.data.tooltip;Zeichnen;Draw;OK
+SHOGun.client.view.button.ShowWorkstateToolsPanel;config.data.tooltip;Arbeitsstand;Workstate;OK
+SHOGun.client.view.button.StepBack;config.data.tooltip;Vorherige Ansicht;Previous View;OK
+SHOGun.client.view.button.StepForward;config.data.tooltip;Nächste Ansicht;Next View;OK
+SHOGun.client.view.button.translation.ToEnglish;config.data.tooltipEn;EN;EN;OK
+SHOGun.client.view.button.translation.ToEnglish;config.data.setLanguageCallbackToastText;Applikationssprache ist jetzt {0};Application language is now {0};OK
+SHOGun.client.view.button.translation.ToGerman;config.data.tooltipDe;DE;DE;OK
+SHOGun.client.view.button.translation.ToGerman;config.data.setLanguageCallbackToastText;Applikationssprache ist jetzt {0};Application language is now {0};OK
+SHOGun.client.view.button.translation.ToMongolian;config.data.tooltipMn;MN;MN;OK
+SHOGun.client.view.button.translation.ToMongolian;config.data.setLanguageCallbackToastText;Applikationssprache ist jetzt {0};Application language is now {0};OK
+SHOGun.client.view.button.ZoomToExtent;config.data.tooltip;Auf Gesamtansicht zoomen;Zoom to Extent;OK
+SHOGun.client.view.container.MultiSearchSettings;config.data.title;Sucheinstellungen;Search Settings; -
+SHOGun.client.view.container.MultiSearchSettings;config.data.generalSettingsLabel;Allgemeine Einstellungen;General Settings; -
+SHOGun.client.view.container.MultiSearchSettings;config.data.limitCboxLabel;Auf den sichtbaren Kartenbereich einschränken;Limit to visible extent; -
+SHOGun.client.view.container.MultiSearchSettings;config.data.gazetteerLabel;Gazetteer Suche verwenden;Use Gazetteer Search; -
+SHOGun.client.view.container.MultiSearchSettings;config.data.objectSearchLabel;Object Suche verwenden;Use Object Search; -
+SHOGun.client.view.container.MultiSearchSettings;config.data.objectSearchLayersLabel;Layer für Objektsuche;Layer for Object Search; -
+SHOGun.client.view.container.MultiSearchSettings;config.data.saveBtnText;Sucheinstellungen speichern;Save search settings; -
+SHOGun.client.view.form.field.MultiSearchCombo;config.data.emptyText;Suche ...;Search ...; -
+SHOGun.client.view.form.field.MultiSearchCombo;config.data.settingsWindowTitle;Sucheinstellungen;Search Settings; -
+SHOGun.client.view.form.Print;config.data.labelDpi;DPI;DPI;OK
+SHOGun.client.view.form.Print;config.data.printButtonSuffix;herunterladen;download;OK
+SHOGun.client.view.form.Print;config.data.printFormat;pdf;pdf;OK
+SHOGun.client.view.form.Print;config.data.printDownload;Download;Download;OK
+SHOGun.client.view.form.Print;config.data.printErrorTitle;Fehler;Error;OK
+SHOGun.client.view.form.Print;config.data.printErrorMsg;Fehler beim Druck;Error while printing;OK
+SHOGun.client.view.form.Print;config.data.formatComboLabel;Ausgabeformat;Output format;OK
+SHOGun.client.view.form.Print;config.data.layoutComboLabel;Vorlage;Template;OK
+SHOGun.client.view.form.Print;config.data.genericFieldSetTitle;Druckeigenschaften;Print properties;OK
+SHOGun.client.view.form.Print;config.data.attributesTitle;Attribute;Attributes;OK
+SHOGun.client.view.form.Print;config.data.scalebarLabel;Maßstabsbalken;Scalebar;OK
+SHOGun.client.view.form.Print;config.data.northArrowLabel;Nordpfeil;North arrow;OK
+SHOGun.client.view.form.Print;config.data.legendLabel;Legende;Legend;OK
+SHOGun.client.view.form.Print;config.data.mapTitleLabel;Titel;Title;OK
+SHOGun.client.view.form.Print;config.data.mapNumberLabel;Kartennummer;Map number;OK
+SHOGun.client.view.form.Print;config.data.titleAuthorName;Autor(en);Author(s);OK
+SHOGun.client.view.form.Print;config.data.titleDataSource;Datengrundlage;Data source;OK
+SHOGun.client.view.form.Print;config.data.titleCoordSystemString;Koordinatensystem;Coordinate system;OK
+SHOGun.client.view.form.Print;config.data.coordSystemString;WGS 1984 UTM Zone 48N;WGS 1984 UTM Zone 48N;OK
+SHOGun.client.view.form.Print;config.data.titleProjString;Projektion;Projection;OK
+SHOGun.client.view.form.Print;config.data.projString;Transverse Mercator;Transverse Mercator;OK
+SHOGun.client.view.form.Print;config.data.titleDatumString;Datum;Datum;OK
+SHOGun.client.view.form.Print;config.data.datumString;WGS 1984;WGS 1984;OK
+SHOGun.client.view.form.Print;config.data.titleScale;Maßstab;Scale;OK
+SHOGun.client.view.form.Print;config.data.titleDate;Stand;State;OK
+SHOGun.client.view.form.Print;config.data.a4LandscapeTemplateValue;A4 Querformat;A4 Portrait;
+SHOGun.client.view.form.Print;config.data.a4PortraitTemplateValue;A4 Hochformat;A4 Landscape;
+SHOGun.client.view.grid.ApplicationState;config.data.columnDescriptionText;Beschreibung;Description;OK
+SHOGun.client.view.grid.ApplicationState;config.data.columnUrlText;Link zum Arbeitsstand;Link to application state;OK
+SHOGun.client.view.grid.ApplicationState;config.data.columnLastModifiedText;Letzte Änderung;Last modification;OK
+SHOGun.client.view.grid.ApplicationState;config.data.urlColumnLinkText;Link;Link;OK
+SHOGun.client.view.grid.ApplicationState;config.data.deleteBtnText;Löschen;Delete;OK
+SHOGun.client.view.grid.ApplicationState;config.data.loadBtnText;Laden;Load;OK
+SHOGun.client.view.grid.ApplicationState;config.data.createBtnText;Speichen;Save;OK
+SHOGun.client.view.grid.ApplicationState;config.data.copyToClipboardSuccessMsg;URL erfolgreich in den Zwischenspeicher kopiert.;Successfully copied the URL to clipboard.;OK
+SHOGun.client.view.grid.ApplicationState;config.data.copyToClipboardFailureMsg;Fehler beim Speichern der URL in den Zwischenspeicher!;Could not copy the URL to clipboard.;OK
+SHOGun.client.view.grid.ApplicationState;config.data.noSelectionAvailableMsg;Keine Selektion vorhanden!;No selection available!;OK
+SHOGun.client.view.grid.ApplicationState;config.data.loadStateSuccessMsg;Arbeitsstand erfolgreich geladen.;Successfully loaded the application state.;OK
+SHOGun.client.view.grid.ApplicationState;config.data.loadStateFailureMsg;Fehler beim Laden des Arbeitsstands!;Could not load the application state!;OK
+SHOGun.client.view.grid.ApplicationState;config.data.createStatePromptMsg;Bitte geben Sie eine Kurzbeschreibung für den neuen Arbeitsstand ein:;Please enter a short description for the application state to create:;OK
+SHOGun.client.view.grid.ApplicationState;config.data.createStateSuccessMsg;Arbeitsstand erfolgreich angelegt.;Successfully created the application state.;OK
+SHOGun.client.view.grid.ApplicationState;config.data.createStateFailureMsg;Fehler beim Anlegen des Arbeitsstands!;Could not create the application state!;OK
+SHOGun.client.view.grid.ApplicationState;config.data.deleteStateConfirmMsg;Den ausgewählten Arbeitsstand wirklich löschen?;Do you really want to delete the selected application state?;OK
+SHOGun.client.view.grid.ApplicationState;config.data.deleteStateSuccessMsg;Arbeitsstand erfolgreich gelöscht.;Successfully removed the application state.;OK
+SHOGun.client.view.grid.ApplicationState;config.data.deleteStateFailureMsg;Fehler beim Löschen des Arbeitsstands!;Could not delete the application state!;OK
+SHOGun.client.view.grid.ApplicationState;config.data.updateStatePromptMsg;Den ausgewählten Arbeitsstand wirklich überschreiben?;Do you really want to overwrite the selected application state?;OK
+SHOGun.client.view.grid.ApplicationState;config.data.updateStateSuccessMsg;Arbeitsstand erfolgreich aktualisiert.;Successfully updated the application state.;OK
+SHOGun.client.view.grid.ApplicationState;config.data.updateStateFailureMsg;Fehler bei Aktualisierung des Arbeitsstands!;Could not update the application state!;OK
+SHOGun.client.view.grid.MultiSearchGazetteerGrid;config.data.title;Gazetteer Suche;Gazetteer Search; -
+SHOGun.client.view.grid.MultiSearchGazetteerGrid;config.data.hideToolTooltip;Gazetteer Suche verbergen;Hide Gazetteer Search; -
+SHOGun.client.view.grid.ObjectSearchGrid;config.data.title;Objektsuche;Object Search; -
+SHOGun.client.view.grid.ObjectSearchGrid;config.data.hideToolTooltip;Objektsuche verbergen;Hide Object Search; -
+SHOGun.client.view.panel.document.DocumentTree;config.data.title;Dokumentenbaum;Document tree;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.addNewFolderText;Neuen Ordner hinzufügen;Add new folder;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.folderNameText;Ordnername;Folder name;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.folderNamePromptText;Ordnername eingeben;Enter folder name;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.addNewLeafText;Neues Dokument hinzufügen;Add new document;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.leafNameText;Dokumentname;Document name;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.leafNamePromptText;Dokumentname hinzufügen;Enter document name;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.addDocumentText;PDF Datei anhängen/ersetzen;Attach/replace PDF document;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.renameFolderText;Ordner umbenennen;Rename folder;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.folderNewNamePromptText;Neuen Ordnernamen eingeben;Enter new folder name;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.deleteFolderText;Ordner löschen;Delete folder;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.warningTitle;Achtung;Warning;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.deleteFolderWarnMsgText;Alle enthaltenen Dokumente werden gelöscht. Sind Sie sicher?;All contained documents will be also deleted. Are you sure?;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.renameLeafText;Dokument umbenennen;Rename document;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.leafNewNamePromptText;Neuen Dokumentennamen eingeben;Enter new document name;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.deleteLeafText;Dokument löschen;Delete document;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.deleteLeafWarnMsgText;Dieses Dokument wird gelöscht. Sind Sie sicher?;This document will be removed from tree. Are you sure?;OK
+SHOGun.client.view.panel.document.DocumentTree;config.data.dragText;Drag and Drop zum Umsortieren;Drag and drop to reorganize; -
+SHOGun.client.view.panel.LegendTree;config.data.title;Legende;Legend;OK
+SHOGun.client.view.panel.MapMetaInformation;config.data.srsPrefix;Bezugssystem;Reference System;OK
+SHOGun.client.view.panel.MapMetaInformation;config.data.mousePositionLabel;Zeigerposition;Mouse Position;OK
+SHOGun.client.view.panel.MeasurementToolsPanel;config.data.lineTooltip;Strecke messen;Distance measurements;OK
+SHOGun.client.view.panel.MeasurementToolsPanel;config.data.areaTooltip;Fläche messen;Area measurements;OK
+SHOGun.client.view.panel.MeasurementToolsPanel;config.data.clickToDrawText;Klicken zum Messen;Click to measure;OK
+SHOGun.client.view.panel.MeasurementToolsPanel;config.data.continueLineMsg;Klicken zum Zeichnen der Strecke;Click to draw line;OK
+SHOGun.client.view.panel.MeasurementToolsPanel;config.data.continuePolygonMsg;Klicken zum Zeichnen der Fläche;Click to draw area;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawPointsBtnText;Punkt zeichnen;Draw Point;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawLinesBtnText;Linie zeichnen;Draw Line;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawPolygonsBtnText;Polygon zeichen;Draw Polygon;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawCirclesBtnText;Kreis zeichnen;Draw circle;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawRectanglesBtnText;Rechteck zeichnen;Draw rectangle;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawTextBtnText;Beschriftung einfügen;Add label;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.drawPostItBtnText;Post-it zeichnen;Draw Post-it;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.copyObjectBtnText;Objekt kopieren;Copy Object;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.moveObjectBtnText;Objekt verschieben;Move Object;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.modifyObjectBtnText;Objekt modifizieren;Modify Object;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.deleteObjectBtnText;Objekt löschen;Delete Object;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.openStyleBtnText;Styler;Styler;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.postItWindowTitle;Post-it Text eingeben;Enter Post-it Text;OK
+SHOGun.client.view.panel.RedliningToolsPanel;config.data.textWindowTitle;Beschriftungstext eingeben;Enter label text;OK
+SHOGun.client.view.panel.WorkstateToolsPanel;config.data.loadSaveWorkstateBtnText;Arbeitstände laden/speichern;load/save Workstates;OK
+SHOGun.client.view.panel.WorkstateToolsPanel;config.data.permalinkBtnTooltip;Permalink erzeugen;Generate Permalink;NOT OK - not binding
+SHOGun.client.view.panel.WorkstateToolsPanel;config.data.permalinkTitle;Link zur Anwendung;URL to application;NOT OK - not binding
+SHOGun.client.view.panel.WorkstateToolsPanel;config.data.applicationStateWinTitle;Arbeitsstände;Application states;OK
+SHOGun.client.view.window.document.DocumentPdfUpload;config.data.title;PDF Dokumenten-Upload;PDF document upload;OK
+SHOGun.client.view.window.document.DocumentPdfUpload;config.data.uploadBtnText;Upload starten;Start upload;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.title;Dokumente;Documents;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textOpenSelectedDoc;Dokument öffnen;Open selected document;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textDeleteSelectedDoc;Dokument löschen;Delete selected document;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textCreateNewDoc;Neues Dokument erstellen;Create new document;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textPromptMessageNewDoc;Bitte neuen Namen für Dokument eingeben;Please enter a name for the new document;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textDeleteDoc;Dokument löschen;Delete a document;OK
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textPromptDeleteDoc;Sind Sie sicher; dass Sie das Dokument {0} löschen wollen?;Та энэ баримт бичгийг устгахдаа итгэлтэй байна уу;OK;;;;;;;;;;;;;;;;;
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textUnknownError;Ein unbekannter Fehler ist aufgetreten;An unknown error occured.; -
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textCouldNotCreateDocument;Dokument konnte nicht erstellt werden.;Could not create document.; -
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textCouldNotDeleteDocument;Dokument konnte nicht gelöscht werden.;Could not delete document.; -
+SHOGun.client.view.window.document.ListDocumentsWindow;config.data.textSuccessDeleteDoc;Dokument {0} wurde erfolgreich gelöscht.;"Successfully deleted the document ""{0}""";OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.title;Zeichnungsstil;Drawing Style;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.pointStyleFieldSetTitle;Punktstil;Point Style;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.pointStyleRadiusNumberFieldLabel;Punkt Radius;Point Radius;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.styleStrokeWidthFieldLabel;Strichstärke;Stroke Width;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.styleStrokeColorFieldLabel;Strichfarbe;Stroke Color;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.styleFillColorFieldLabel;Füllfarbe;Fill Color;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.lineStyleFieldSetTitle;Linienstil;Line Style;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.polygonStyleFieldSetTitle;Polygonstil;Polygon Stile;OK
+SHOGun.client.view.window.RedliningStylerWindow;config.data.closeStylerBtnText;Ok;OK;OK
+SHOGun.view.window.PrintWindow;config.data.title;Karte drucken;Print map;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.title;Gewässerparameter;Water parameters;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.undoZoomBtnText;Rauszoomen;Zoom Out;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.altitude;Höhe;Altitude;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.dateFieldFromLabel;Von;From;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.dateFieldToLabel;Bis;To;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.updateTimeRangeBtnText;Aktualisieren;Update;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendTemp;Temperatur;Temperature;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendLeitfaehigkeit;Leitfähigkeit;Conductivity;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendpH;pH;pH;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendTruebung;Trübung;Turbidity;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendChlorophyll;Chlorophyll;Chlorophyll;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendSauerstoff;Sauerstoffsättigung in %;Oxygen saturation in%;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendSauerstoff2;Sauerstoffkonzentration;Oxygen concentration;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.chartlegendWasserstand;Wasserstand;Water level;OK
+SHOGun.view.window.WaterDataChartWindow;config.data.currentDayBtnText;Heute;Today;NOT OK - not binding
+SHOGun.view.window.WaterDataChartWindow;config.data.hourLabel;Std;Hours;NOT OK - not binding
+SHOGun.view.window.WaterDataChartWindow;config.data.minuteLabel;Min;Minutes;NOT OK - not binding
+BasiGX.view.button.AddWms;config.data.tooltip;WMS hinzufügen;Add WMS; -
+BasiGX.view.button.AddWms;config.data.text;;; -
+BasiGX.view.button.AddWms;config.data.windowTitle;WMS hinzufügen;Add WMS; -
+BasiGX.view.button.CoordinateTransform;config.data.tooltip;Koordinaten transformieren und anzeigen;Transform coordinates; -
+BasiGX.view.button.CoordinateTransform;config.data.text;Koordinaten transformieren;Transform coordinates; -
+BasiGX.view.button.CoordinateTransform;config.data.windowTitle;Koordinaten transformieren;Transform coordinates; -
+BasiGX.view.button.Help;config.data.tooltip;Hilfe;Help; -
+BasiGX.view.button.Help;config.data.text;;; -
+BasiGX.view.button.Hsi;config.data.tooltip;Informationsabfrage;Query object information; -
+BasiGX.view.button.Hsi;config.data.text;;; -
+BasiGX.view.button.Measure;config.data.textline;Strecke messen;Measure line; -
+BasiGX.view.button.Measure;config.data.textpoly;Fläche messen;Measure area; -
+BasiGX.view.button.Measure;config.data.continuePolygonMsg;Klicken zum Zeichnen der Fläche;Click to start measuring the area; -
+BasiGX.view.button.Measure;config.data.continueLineMsg;Klicken zum Zeichnen der Strecke;Click to start measuring the line; -
+BasiGX.view.button.Measure;config.data.clickToDrawText;Klicken zum Messen;Click to start measuring; -
+BasiGX.view.button.Permalink;config.data.tooltip;Permalink erzeugen;Create permalink; -
+BasiGX.view.button.Permalink;config.data.text;Permalink;Permalink; -
+BasiGX.view.button.Permalink;config.data.windowTitle;Link zur Anwendung;Link to application; -
+BasiGX.view.button.ToggleLegend;config.data.tooltip;Layerauswahl;Show legend; -
+BasiGX.view.button.ToggleLegend;config.data.text;;; -
+BasiGX.view.button.ZoomIn;config.data.tooltip;Hineinzoomen;Zoom in; -
+BasiGX.view.button.ZoomIn;config.data.text;;; -
+BasiGX.view.button.ZoomOut;config.data.tooltip;Herauszoomen;Zoom out; -
+BasiGX.view.button.ZoomOut;config.data.text;;; -
+BasiGX.view.button.ZoomToExtent;config.data.tooltip;Auf Gesamtansicht zoomen;Zoom to maximum extent; -
+BasiGX.view.button.ZoomToExtent;config.data.text;;; -
+BasiGX.view.combo.Language;config.data.fieldLabel;;; -
+BasiGX.view.combo.ScaleCombo;config.data.fieldLabel;;; -
+BasiGX.view.container.LayerSlider;config.data.disabeldLabelHtml;Aus;Off; -
+BasiGX.view.container.NominatimSearch;config.data.searchTermTextFieldLabel;Suchbegriff;Search term; -
+BasiGX.view.container.NominatimSearch;config.data.searchResultGridTitle;Suchergebnisse;Search results; -
+BasiGX.view.container.NominatimSearch;config.data.resetBtnText;Zurücksetzen;Reset; -
+BasiGX.view.container.OverpassSearch;config.data.searchTermTextFieldLabel;Suchbegriff;Search term; -
+BasiGX.view.container.OverpassSearch;config.data.searchCriteriaGridTitle;Suchkategorien;Search criteria; -
+BasiGX.view.container.OverpassSearch;config.data.searchCriteriaLabelTag;OSM-Tag;OSM-Tag; -
+BasiGX.view.container.OverpassSearch;config.data.searchCriteriaCategoryTag;Kategorie;Category; -
+BasiGX.view.container.OverpassSearch;config.data.searchCriteriaOccurenceTag;Tag-Häufigkeit;Tag-occurence; -
+BasiGX.view.container.OverpassSearch;config.data.searchResultGridTitle;Suchergebnisse;Search results; -
+BasiGX.view.container.OverpassSearch;config.data.resetBtnText;Zurücksetzen;Reset; -
+BasiGX.view.container.OverpassSearch;config.data.noMatchesFoundErrText;Keine passenden Einträge gefunden;No matches found; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleFieldSetTitle;Punktstil;Point Style; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleSymbolPanelTitle;Symbol;Symbol; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleRadiusNumberFieldLabel;Punktradius;Point Radius; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleStrokeNumberFieldLabel;Strichstärke;Stroke Width; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleStrokeColorFieldLabel;Strichfarbe;Stroke Color; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleFillColorFieldLabel;Füllfarbe;Fill Color; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleGraphicPanelTitle;Grafik;Graphic; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleChooseImgBtnText;Grafik auswählen;Choose Image; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleImgOffsetXSliderLabel;X-Versatz;Graphic Offset X; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleImgOffsetYSliderLabel;Y-Versatz;Graphic Offset Y; -
+BasiGX.view.container.RedlineStyler;config.data.pointStyleImgScaleSliderLabel;Skalierung;Scale; -
+BasiGX.view.container.RedlineStyler;config.data.lineStyleFieldSetTitle;Linienstil;LineString Style; -
+BasiGX.view.container.RedlineStyler;config.data.lineStyleStrokeNumberFieldLabel;Strichstärke;Stroke Width; -
+BasiGX.view.container.RedlineStyler;config.data.lineStyleStrokeColorFieldLabel;Strichfarbe;Stroke Color; -
+BasiGX.view.container.RedlineStyler;config.data.polygonStyleFieldSetTitle;Flächenstil;Polygon Style; -
+BasiGX.view.container.RedlineStyler;config.data.polygonStyleStrokeNumberFieldLabel;Strichstärke;Stroke Width; -
+BasiGX.view.container.RedlineStyler;config.data.polygonStyleStrokeColorFieldLabel;Strichfarbe;Stroke Color; -
+BasiGX.view.container.RedlineStyler;config.data.polygonStyleFillColorFieldLabel;Füllfarbe;Fill Color; -
+BasiGX.view.container.RedlineStyler;config.data.pointGrapicDeletedSuccessMsgText;Die Grafik wurden entfernt. Bitte wählen Sie eine neue aus.;The icon has been deleted. Please reassign a new one.; -
+BasiGX.view.container.RedlineStyler;config.data.pointGrapicDeletedSuccessMsgTitle;Löschen erfolgreich;Deletion succesfull; -
+BasiGX.view.container.RedlineStyler;config.data.graphicPoolWindowTitle;Grafikpool;Graphic Pool; -
+BasiGX.view.container.Redlining;config.data.drawPointsBtnText;Zeichne Punkte;Draw Points; -
+BasiGX.view.container.Redlining;config.data.drawLinesBtnText;Zeichne Linien;Draw Lines; -
+BasiGX.view.container.Redlining;config.data.drawPolygonsBtnText;Zeichne Flächen;Draw Polygons; -
+BasiGX.view.container.Redlining;config.data.drawPostItBtnText;Zeichne Post-It;Draw Post-it; -
+BasiGX.view.container.Redlining;config.data.copyObjectBtnText;Kopiere Objekt;Copy Object; -
+BasiGX.view.container.Redlining;config.data.moveObjectBtnText;Verschiebe Objekt;Move Object; -
+BasiGX.view.container.Redlining;config.data.modifyObjectBtnText;Modifiziere Objekt;Modify Object; -
+BasiGX.view.container.Redlining;config.data.deleteObjectBtnText;Entferne Objekt;Delete Object; -
+BasiGX.view.container.Redlining;config.data.openStyleBtnText;Styler;Styler; -
+BasiGX.view.container.Redlining;config.data.stylerWindowTitle;Styler;Styler; -
+BasiGX.view.container.Redlining;config.data.postItWindowTitle;Post-It Text;Enter the Post-its text; -
+BasiGX.view.container.Redlining;config.data.postItWindowCreatePostItBtnText;Erstelle Post-It;Create Post-it; -
+BasiGX.view.container.WfsSearch;config.data.searchTermTextFieldLabel;Suchbegriff;Search term; -
+BasiGX.view.container.WfsSearch;config.data.searchResultGridTitle;Suchergebnisse;Search results; -
+BasiGX.view.container.WfsSearch;config.data.resetBtnText;Zurücksetzen;Reset; -
+BasiGX.view.form.AddWms;config.data.queryParamsFieldSetTitle;Anfrageparameter;Query parameters; -
+BasiGX.view.form.AddWms;config.data.wmsUrlTextFieldLabel;WMS-URL;WMS-URL; -
+BasiGX.view.form.AddWms;config.data.wmsVersionContainerFieldLabel;Version;Version; -
+BasiGX.view.form.AddWms;config.data.availableLayesFieldSetTitle;Verfügbare Layer;Available layers; -
+BasiGX.view.form.AddWms;config.data.resetBtnText;Zurücksetzen;Reset; -
+BasiGX.view.form.AddWms;config.data.requestLayersBtnText;Verfügbare Layer abfragen;Request available layers; -
+BasiGX.view.form.AddWms;config.data.addCheckedLayersBtnText;Ausgewählte Layer hinzufügen;Add selected layers; -
+BasiGX.view.form.AddWms;config.data.errorIncompatibleWMS;Der angefragte WMS ist nicht kompatibel zur Anwendung;The requested WMS is not compatible with this application; -
+BasiGX.view.form.AddWms;config.data.errorRequestFailed;Die angegebene URL konte nicht abgefragt werden;Could not reach the desired location; -
+BasiGX.view.form.AddWms;config.data.errorCouldntParseResponse;Die erhaltene Antwort konnte nicht erfolgreich geparst werden;Error while reading the response send by the server; -
+BasiGX.view.form.CoordinateTransform;config.data.coordFieldSetTitle;Koordinaten;Coordinates; -
+BasiGX.view.form.CoordinateTransform;config.data.coordXFieldLabel;X-Koordinate;X-Coordinate; -
+BasiGX.view.form.CoordinateTransform;config.data.coordYFieldLabel;Y-Koordinate;Y-Coordinate; -
+BasiGX.view.form.CoordinateTransform;config.data.transformBtnText;Transformieren;Transform; -
+BasiGX.view.form.CoordinateTransform;config.data.resetFormBtnText;Zurücksetzen;Reset; -
+BasiGX.view.form.Permalink;config.data.refreshBtnText;Erneuern;Refresh; -
+BasiGX.view.form.Print;config.data.title;Drucken;Print; -
+BasiGX.view.form.Print;config.data.labelDpi;DPI;DPI; -
+BasiGX.view.form.Print;config.data.printButtonSuffix;anfordern;request; -
+BasiGX.view.form.Print;config.data.downloadButtonPrefix;Download;Download; -
+BasiGX.view.form.Print;config.data.printFormat;pdf;pdf; -
+BasiGX.view.form.Print;config.data.genericFieldSetTitle;Einstellungen;Settings; -
+BasiGX.view.panel.GraphicPool;config.data.delButtonText;Löschen;Delete; -
+BasiGX.view.panel.GraphicPool;config.data.okBtnText;OK;Ok; -
+BasiGX.view.panel.GraphicPool;config.data.msgBoxNoElementSelectedText;Keine Grafik ausgewählt;No image selected; -
+BasiGX.view.panel.GraphicPool;config.data.closeBtnText;Schließen;Close; -
+BasiGX.view.panel.GraphicPool;config.data.chooseImageBtnText;Auswählen;Choose; -
+BasiGX.view.panel.GraphicPool;config.data.uploadBtnText;Hochladen;Upload; -
+BasiGX.view.panel.GraphicPool;config.data.uploadWaitMsg;Bitte warten...;Please wait...; -
+BasiGX.view.panel.GraphicPool;config.data.uploadErrorText;Fehler beim Hochladen;Error on upload check file type and size; -
+BasiGX.view.panel.GraphicPool;config.data.msgConfirmDeletionTpl;Möchten Sie die ausgewählte Grafik wirklich löschen?;Do you really want to delete this picture?; -
+BasiGX.view.panel.GraphicPool;config.data.graphicDeleteInfoSuccess;Grafik erfolgreich entfernt;Image successfully deleted; -
+BasiGX.view.panel.GraphicPool;config.data.graphicDeleteInfoError;Fehler beim Entfernen der Grafik;Image deletion failed; -
+BasiGX.view.panel.GraphicPool;config.data.msgDeletionCancelled;Entfernen abgebrochen;Deletion cancelled.; -
+BasiGX.view.panel.LayerSetChooser;config.data.title;Themen Auswahl;Themes; -
+BasiGX.view.panel.LayerSetChooser;config.data.filterFieldLabel;Filter;Filter; -
+BasiGX.view.panel.MapContainer;config.data.titleLegendPanel;Legende;Legend; -
+BasiGX.view.panel.Menu;config.data.closedMenuTitle;Menu schließen;Close menu; -
+BasiGX.view.panel.Menu;config.data.openedMenuTitle;Menu anzeigen;Show menu; -
+BasiGX.view.view.GraphicPool;config.data.emptyStoreMsg;Keine Daten gefunden;No data found; -
+Ext.Date;monthNames[];Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember;January,February,March,April,May,June,July,August,September,October,November,December; -
+Ext.Date;defaultFormat;d.m.Y;m/d/Y; -
+Ext.Date;monthNumbers.Jan;0;0; -
+Ext.Date;monthNumbers.Feb;1;1; -
+Ext.Date;monthNumbers.Mar;2;2; -
+Ext.Date;monthNumbers.Apr;3;3; -
+Ext.Date;monthNumbers.Mai;4;4; -
+Ext.Date;monthNumbers.Jun;5;5; -
+Ext.Date;monthNumbers.Jul;6;6; -
+Ext.Date;monthNumbers.Aug;7;7; -
+Ext.Date;monthNumbers.Sep;8;8; -
+Ext.Date;monthNumbers.Okt;9;9; -
+Ext.Date;monthNumbers.Nov;10;10; -
+Ext.Date;monthNumbers.Dez;11;11; -
+Ext.Date;dayNames[];Sonntag;Montag;Mittwoch;Donnerstag;Freitag;Samstag;Ням;Даваа;Мягмар;Лхагва;Пүрэв;Баасан;Хагас сайн;х;а;р;а;а;х;а; -
+Ext.form.Basic;waitTitle;Bitte warten...;Please Wait...; -
+Ext.form.CheckboxGroupExt.form.CheckboxGroup;blankText;Du musst mehr als einen Eintrag aus der Gruppe auswählen;You must select at least one item in this group; -
+Ext.form.field.Base;invalidText;Der Wert des Feldes ist nicht korrekt;The value in this field is invalid; -
+Ext.form.field.ComboBox;valueNotFoundText;;; -
+Ext.form.field.ComboBox;defaultListConfig.loadingText;Lade Daten ...;Loading...; -
+Ext.form.field.Date;disabledDaysText;nicht erlaubt;Disabled; -
+Ext.form.field.Date;disabledDatesText;nicht erlaubt;Disabled; -
+Ext.form.field.Date;minText;Das Datum in diesem Feld muss nach dem {0} liegen;The date in this field must be after {0}; -
+Ext.form.field.Date;maxText;Das Datum in diesem Feld muss vor dem {0} liegen;The date in this field must be before {0}; -
+Ext.form.field.Date;invalidText;{0} ist kein gültiges Datum - es muss im Format {1} eingegeben werden;{0} is not a valid date - it must be in the format {1}; -
+Ext.form.field.Date;format;d.m.Y;m/d/y; -
+Ext.form.field.Date;altFormats;j.n.Y|j.n.y|j.n.|j.|j/n/Y|j/n/y|j-n-y|j-n-Y|j/n|j-n|dm|dmy|dmY|j|Y-n-j|Y-m-d;m/d/Y|m-d-y|m-d-Y|m/d|m-d|md|mdy|mdY|d|Y-m-d; -
+Ext.form.field.Date;startDay;1;1; -
+Ext.form.field.HtmlEditor;createLinkText;Bitte geben Sie die URL für den Link ein:;Please enter the URL for the link:; -
+Ext.form.field.HtmlEditor;buttonTips.bold.title;Fett (Ctrl+B);Bold (Ctrl+B); -
+Ext.form.field.Number;minText;Der Mindestwert für dieses Feld ist {0};The minimum value for this field is {0}; -
+Ext.form.field.Number;maxText;Der Maximalwert für dieses Feld ist {0};The maximum value for this field is {0}; -
+Ext.form.field.Number;nanText;{0} ist keine Zahl;{0} is not a valid number; -
+Ext.form.field.Text;minLengthText;Bitte geben Sie mindestens {0} Zeichen ein;The minimum length for this field is {0}; -
+Ext.form.field.Text;maxLengthText;Bitte geben Sie maximal {0} Zeichen ein;The maximum length for this field is {0}; -
+Ext.form.field.Text;blankText;Dieses Feld darf nicht leer sein;This field is required; -
+Ext.form.field.Text;regexText;;; -
+Ext.form.field.Text;emptyText;;; -
+Ext.form.field.Time;maxText;Die Zeit muss gleich oder vor {0} liegen;The time in this field must be equal to or before {0}; -
+Ext.form.field.Time;invalidText;{0} ist keine gültige Zeit;{0} is not a valid time; -
+Ext.form.field.Time;format;H:i;g:i A; -
+Ext.form.field.TimeExt.form.field.Time;minText;Die Zeit muss gleich oder nach {0} liegen;The time in this field must be equal to or after {0}; -
+Ext.form.field.VTypes;alphaText;Dieses Feld darf nur Buchstaben enthalten und _;This field should only contain letters and _; -
+Ext.form.field.VTypes;alphanumText;Dieses Feld darf nur Buchstaben und Zahlen enthalten und _;This field should only contain letters numbers and _; -
+Ext.form.field.VTypes;emailText;Dieses Feld sollte eine E-Mail-Adresse enthalten. Format: 'user@example.com';This field should be an e-mail address in the format 'user@example.com'; -
+Ext.form.field.VTypes;urlText;Dieses Feld sollte eine URL enthalten. Format: http:'www.example.com';This field should be a URL in the format 'http://www.example.com'; -
+Ext.form.RadioGroupExt.form.RadioGroup;blankText;Du musst einen Eintrag aus der Gruppe auswählen;You must select one item in this group; -
+Ext.grid.BooleanColumn;falseText;FALSCH;false; -
+Ext.grid.BooleanColumnExt.grid.BooleanColumn;trueText;wahr;true; -
+Ext.grid.DateColumnExt.grid.DateColumn;format;d.m.Y;m/d/Y; -
+Ext.grid.header.Container;sortDescText;Absteigend sortieren;Sort Descending; -
+Ext.grid.header.Container;sortClearText;Sortierung entfernen;Remove Sorting; -
+Ext.grid.header.Container;columnsText;Spalten;Columns; -
+Ext.grid.header.ContainerExt.grid.header.Container;sortAscText;Aufsteigend sortieren;Sort Ascending; -
+Ext.grid.NumberColumnExt.grid.NumberColumn;format;0.000,00/i;0.000,00/i; -
+Ext.grid.plugin.DragDrop;dragText;0} Zeile(n) ausgewählt;{0} selected row{1}; -
+Ext.grid.PropertyColumnModel;valueText;Wert;Value; -
+Ext.grid.PropertyColumnModel;dateFormat;d.m.Y;m/j/Y; -
+Ext.grid.PropertyColumnModel;trueText;wahr;true; -
+Ext.grid.PropertyColumnModel;falseText;FALSCH;false; -
+Ext.grid.PropertyColumnModelExt.grid.PropertyColumnModel;nameText;Name;Name; -
+Ext.LoadMask;msg;Lade Daten...;Loading...; -
+Ext.grid.Panel;collapsible;Einklappen;Collapse panel; -
+Ext.grid.Panel;collapsibleText;Einklappen;Collapse panel; -
+Ext.picker.Date;minText;Dieses Datum liegt von dem erstmöglichen Datum;This date is before the minimum date; -
+Ext.picker.Date;maxText;Dieses Datum liegt nach dem letztmöglichen Datum;This date is after the maximum date; -
+Ext.picker.Date;disabledDaysText;;; -
+Ext.picker.Date;disabledDatesText;;; -
+Ext.picker.Date;nextText;Nächster Monat (Strg/Control + Rechts);Next Month (Control+Right); -
+Ext.picker.Date;prevText;Vorheriger Monat (Strg/Control + Links);Previous Month (Control+Left); -
+Ext.picker.Date;monthYearText;Monat auswählen (Strg/Control + Hoch/Runter; um ein Jahr auszuwählen);Сараа сонгох (Хянах+жилийг хөдөлгөхийн тулд дээд/доод); -;;;;;;;;;;;;;;;;;
+Ext.picker.Date;todayTip;Heute ({0}) (Leertaste);{0} (Spacebar); -
+Ext.picker.Date;format;d.m.Y;m/d/y; -
+Ext.picker.Date;startDay;1;1; -
+Ext.picker.Date;todayText; Heute;Today; -
+Ext.picker.Month;okText;Ok;OK; -
+Ext.picker.Month;cancelText;Abbrechen;Cancel; -
+Ext.tab.Tab;closeText;Diesen Tab schließen;Close this Tab; -
+Ext.toolbar.Paging;beforePageText;Seite;Page; -
+Ext.toolbar.Paging;afterPageText;von {0};of {0}; -
+Ext.toolbar.Paging;firstText;Erste Seite;First Page; -
+Ext.toolbar.Paging;prevText;vorherige Seite;Previous Page; -
+Ext.toolbar.Paging;nextText;nächste Seite;Next Page; -
+Ext.toolbar.Paging;lastText;letzte Seite;Last Page; -
+Ext.toolbar.Paging;refreshText;Aktualisieren;Refresh; -
+Ext.toolbar.Paging;displayMsg;Anzeige Eintrag {0} - {1} von {2};Displaying {0} - {1} of {2}; -
+Ext.toolbar.Paging;emptyMsg;Keine Daten vorhanden;No data to display; -
+Ext.util.Format;thousandSeparator;.;.; -
+Ext.util.Format;decimalSeparator;0;0; -
+Ext.util.Format;currencySign;€;$; -
+Ext.util.Format;dateFormat;d.m.Y;m/d/Y; -
+Ext.view.AbstractView;loadingText;Lade Daten...;хараахан орчуулагдаагүй; -
+Ext.view.View;emptyText;;; -
+Ext.window.MessageBox;buttonText.ok;Ok;OK; -
+Ext.window.MessageBox;buttonText.cancel;Abbrechen;Cancel; -
+Ext.window.MessageBox;buttonText.yes;Ja;Yes; -
+Ext.window.MessageBox;buttonText.no;Nein;No; -
+Ext.window.Window;closeToolText;Fenster schließen;close window; -
